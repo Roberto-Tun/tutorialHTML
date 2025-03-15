@@ -135,31 +135,47 @@
             </div>
         </aside>
         <main>
-            <h1>HTML - Introducción al HTML</h1>
+            <h1>HTML - Elmentos</h1>
             <nav>
-                <a href="#">HTML</a> &gt; <a href="#">Tutorial HTML</a> &gt; <span>HTML - Introducción al HTML</span>
+                <a href="#">HTML</a> &gt; <span>Tutorial HTML - Elmentos</span>
             </nav>
-            <p>Bienvenido a la sección de <strong>tutoriales HTML</strong>. Aquí podrás aprender a utilizar el lenguaje <strong>HTML</strong>. Después de leer este tutorial podrás hacer tus propias <strong>páginas web</strong>.</p>
-            <p>Si ya estás familiarizado con el HTML, entonces será mucho más fácil de aprender. Te recomiendo, que no leas este tutorial de principio a fin sino que utilices un cuarto o media hora de tu tiempo para que practiques después de haber leído varias lecciones.</p>
-            <h2>Antes de empezar a aprender HTML</h2>
-            <p>Crear documentos en HTML no es difícil. Para empezar, sólo necesitas un bloc de notas y dedicación. Si eres nuevo en este ámbito y aun no has leído la <a href="#">Guía para principiantes</a>, te recomiendo que pases unos cuantos minutos haciéndolo.</p>
-            <h2>Páginas web</h2>
-            <p>Las páginas web son bastante útiles. Esto explica algunos argumentos:</p>
+            <p>Los elementos HTML tienen muchos rangos. Todo lo que ves: párrafos, logo, baner, los enlaces de navegación del lado izquierdo y derecho y todos son elementos de esta página.</p>
+            <p>Un elemento tiene tres partes: Una etiqueta de abertura, el contenido del elemento y una etiqueta de cierre.</p>
             <ul>
-                <li>La manera más fácil de propagar <strong>información</strong> en Internet</li>
-                <li>Otra forma de <strong>expandir tu negocio</strong></li>
-                <li>Puedes mostrarle al mundo lo que tienes que decir en una <strong>página personal</strong></li>
+                <li><code>&lt;p&gt;</code> - la etiqueta que abre un párrafo</li>
+                <li><strong>Contenido del elemento</strong> - el párrafo en sí</li>
+                <li><code>&lt;/p&gt;</code> - la etiqueta de cierre</li>
             </ul>
-            <h2>Términos a recordar</h2>
-            <p><strong>Etiqueta</strong> - utilizada para especificar las regiones del documento HTML, que luego serán leídas por el navegador. Las etiquetas se verán así:</p>
-            <p><strong>Elemento</strong> - es una etiqueta completa, teniendo una <code>&lt;etiqueta&gt;</code> de apertura y una etiqueta de cierre <code>&lt;/etiqueta&gt;</code>.</p>
-            <p><strong>Atributo</strong> - se usa para cambiar el valor de un elemento HTML. Normalmente un elemento tiene varios atributos.</p>
-            <p>Hasta ahora, recuerda solamente que una <strong>etiqueta</strong> es un comando que el navegador ejecuta, un <strong>elemento</strong> es una etiqueta completa y un <strong>atributo</strong> personaliza o de estilos diferentes a un elemento HTML.</p>
-            <h2>Los siguientes tutoriales HTML</h2>
-            <p>Para los siguientes tutoriales puedes utilizar en menú de navegación a la izquierda para buscar lo que te interesa, o puedes leerlo página por página pulsando el botón "Siguiente", ubicado en la parte inferior de la página.</p>
+            <p>Todas las páginas web tendrán al menos los elementos base: <strong>html</strong>, <strong>head</strong>, <strong>title</strong> y <strong>body</strong></p>
+            <h1>El elemento html</h1>
+            <hr>
+            <p>Un documento HTML siempre empezará y terminará con una etiqueta &lt;html&gt; y su respectivo &lt;/html&gt;. Esta es la estructura estándar de un documento HTML.</p>
+            <p>Por favor abre un bloc de notas y copia el siguiente código:</p>
+            <img src="../assets/htmlTag.png" alt="" width="100%">
+            <p>Guarda el documento desde "Archivo/Guardar como". Selecciona "Todos los archivos" y nombra el nuevo archivo como "index.html". Dale "Guardar". Ahora abre el archivo en un navegador de manera que puedas actualizar la página (F5).</p>
+            <p>Si hiciste todo correctamente podrás ver tu página web, en blanco!</p>
+            <h2>El elemento head</h2>
+            <hr>
+            <p>El elemento head es el que va a continuación. Mientras lo pongas entre html y body todo debería ir bien. Head no tiene una función evidente, así que hablaremos de este aspecto en los siguientes tutoriales. Sin embargo quiero mencionar que &lt;head&gt; puede ofrecerle información muy útil al navegador. Aquí puedes introducir otros códigos como Javascript o CSS.</p>
+            <p>Por el momento dejaremos así con la excepción de que introducimos el elemento desde la lista, pero primero observemos todo sin él:</p>
+            <img src="../assets/headTag.png" alt="" width="100%">
+            <p>Si guardas el documento e intentas actualizar la página web desde el navegador, no veras ninguna diferencia. Ten un poco de paciencia, porque a continuación estudiaremos algunos elementos visibles.</p>
+            <h2>El elemento title</h2>
+            <hr>
+            <p>Para que todo salga bien tendrás que poner la etiqueta title dentro de la etiqueta head. Lo que escribas dentro de estas dos etiquetas de <em>title</em> ( &lt;title&gt; y &lt;/title&gt;) será visto como el nombre del navegador, normalmente en la parte superior derecha. A continuación tenemos el código HTML</p>
+            <img src="../assets/titleTag.png" alt="" width="100%">
+            <p>Guarda el archivo y abrelo en tu navegador. Podrás ver el título en la pestaña del navegador en la parte superior izquierda (en la mayoría de los navegadores) o derecha (en algunos).</p>
+            <p>Puedes ponerle el nombre que quieras, solo recuerda que los nombres descriptivos son los más fáciles de encontrar después.</p>
+            <h2>El elemento body</h2>
+            <hr>
+            <p>El elemento body es el que define el comienzo del contenido de la página en sí misma (títulos, párrafos, fotos, música y todo lo demás). Como puedes ver en el menú de la izquierda, tratamos uno por uno, todos estos elementos del contenido.</p>
+            <p>Por ahora lo que necesitas recordar es que body abarca todo el contenido de la página.</p>
+            <img src="../assets/bodyTag.png" alt="" width="100%">
+            <p>Ahora guarda y actualiza tu pagina HTML. Deberías poder ver este mensaje en tu navegador. Pero esto es solo el comiendo, pasa al siguiente tutorial para que aprendas sobre los siguientes elementos de una pagina html.</p>            
+            <hr>
             <div class="button-group">
-                <button>Guía del principiante - Conclusión</button>
-                <button>HTML - Elementos</button>
+                <button>HTML- Introducción al HTML</button>
+                <button>HTML - Etiquetas</button>
             </div>
         </main>
         <aside class="right-sidebar">
