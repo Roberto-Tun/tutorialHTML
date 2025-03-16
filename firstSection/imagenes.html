@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Introducción al HTML</title>
+</head>
+<body>
+
+    <!-- Table to create three sections -->
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr>
+            <!-- Left Sidebar -->
+            <td width="20%" valign="top">
+                <h3>Las bases del HTML</h3>
+                <ul>
+                    <li>HTML - Introducción al HTML</li>
+                    <li>HTML - Elementos</li>
+                    <li>HTML - Etiquetas</li>
+                    <li>HTML - Atributos</li>
+                    <li>HTML - Párrafo</li>
+                    <li>HTML - Títulos y encabezados</li>
+                    <li>HTML - Salto de línea</li>
+                    <li>HTML - Línea horizontal</li>
+                    <li>HTML - Listas</li>
+                    <li>HTML - Elementos de formato</li>
+                    <li>HTML - Códigos de color</li>
+                </ul>
+            </td>
+
+            <!-- Main Content (Middle Section) -->
+            <td width="60%" valign="top">
+                <h1>HTML - Imágenes</h1>
+            <nav>
+                <a href="#">HTML</a> &gt; <span>Tutorial HTML - E-mail (mailto)</span>
+            </nav>
+            <p>Las imágenes son muy importantes en una página web. Por lo tanto es conveniente utilizarlas de manera correcta. Inserta imágenes usando la etiqueta &lt;img&gt;.</p>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre style="white-space: normal;">
+<font color="#f1c40f">&lt;img alt="imagen html de ejemplo" src="/assets_tutorials/img/image.jpg" /&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td align="left">
+                        <img src="../assets/imagenExample.jpg" alt="Paisaje con banco y árboles" width="300">
+                    </td>
+                </tr>
+            </table>
+            <p>"src" es el acceso directo para "source". Este atributo es usado para indicar la ubicación de la foto. Como se explicó en el Tutorial de links puedes usar cualquier URL para indicar el archivo.</p>
+            <table width="100%" border="1" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#f8f9fa">
+                    <th><b>Enlace local</b></th>
+                    <th><b>Descripción</b></th>
+                </tr>
+                <tr>
+                    <td>src="image.jpg"</td>
+                    <td>la imagen está ubicada al mismo nivel del archivo .html</td>
+                </tr>
+                <tr>
+                    <td>src="../image.jpg"</td>
+                    <td>la imagen está ubicada en un nivel previo al archivo .html</td>
+                </tr>
+                <tr>
+                    <td>src="../img/image.jpg"</td>
+                    <td>la imagen está ubicada en la carpeta "img" en un nivel previo al archivo .html</td>
+                </tr>
+            </table>
+            <p>Tambien puedes usar la URL completa. Por ejemplo:</p>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre style="white-space: normal;">
+<font color="white">src=</font><font color="#f1c40f">"http://www.tutorialehtml.com/assets_tutorials/img/image.jpg"</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <p>El modelo URL no es recomendable porque en caso de que cambies de dominio también tendrás que cambiar las direcciones de todas las fotos. O si la imagen está guardada en otro dominio usa scr="http://www.domain.com/image.jpg".</p>
+            <p>El hecho de almacenar la imagen en un servidor alternativo, representa una gran ventaja si el espacio proveído para tu dominio es limitado.</p>
+            <h2>HTML - atributo "alternative" para imágenes</h2>
+            <hr>
+            <p>El atributo "alt" es usado para visualizar un texto en vez de una imagen en caso de que tu navegador, por alguna razón, no puede mostrar la imagen o cuando un usuario ha desactivado la opción "Show Image".</p>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre style="white-space: normal;">
+<font color="#f1c40f">&lt;img</font> <font color="yellow">alt=</font><font color="white">"imagen html de ejemplo"</font> 
+<font color="yellow">src=</font><font color="white">"/assets_tutorials/img/image.jpg"</font> <font color="#f1c40f">/&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td align="left">
+                        <img src="../assets/imagenExample.jpg" alt="Paisaje con banco y árboles" width="120" height="75">
+                    </td>
+                </tr>
+            </table>
+            <p>Tambien puedes definir el tamaño de una imagen usando CSS.</p>
+            <h2>HTML - alineación horizontal y vertical de una imagen</h2>
+            <hr>
+            <p>Para esto utilizaremos los atributos align y valign. Las opciones ofrecidas por estos atributos son:</p>
+            <p>Align (horizontal)</p>
+            <ul>
+                <li>right (derecha)</li>
+                <li>left (izquierda)</li>
+                <li>center (centro)</li>
+            </ul>
+            <p>Valigh (vertical)</p>
+            <ul>
+                <li>top (arriba)</li>
+                <li>bottom (abajo)</li>
+                <li>center (centro)</li>
+            </ul>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre style="white-space: normal;">
+<font color="#f1c40f">&lt;img</font> <font color="yellow">alt=</font><font color="white">"imagen html de ejemplo"</font> 
+<font color="yellow">align=</font><font color="white">"right"</font> 
+<font color="yellow">src=</font><font color="white">"/assets_tutorials/img/image.jpg"</font> <font color="#f1c40f">/&gt;</font>
+
+<font color="#f1c40f">&lt;p&gt;</font><font color="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</font><font color="#f1c40f">&lt;/p&gt;</font>
+
+<font color="#f1c40f">&lt;p&gt;</font><font color="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</font><font color="#f1c40f">&lt;/p&gt;</font>
+
+<font color="#f1c40f">&lt;p&gt;</font><font color="white">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</font><font color="#f1c40f">&lt;/p&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                           
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </td>
+                    <td width="30%">
+                        <img src="../assets/imagenExample.jpg" alt="Imagen de paisaje" width="250">
+                    </td>
+                </tr>
+            </table>
+            <h2>HTML - Usar imágenes como links</h2>
+            <hr>
+            <p>Esto es sólo una introducción, hablaremos mas sobre esto en el siguiente tutorial. Las imágenes son bastante útiles como links y pueden ser construidas como a continuación.</p>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre style="white-space: normal;">
+<font color="#f1c40f">&lt;a href="http://www.tutorialehtml.com/" title="HTML link image example"&gt;</font>
+    <font color="#f1c40f">&lt;img</font> <font color="white">alt="imagen html de ejemplo" src="/assets_tutorials/img/image.jpg" width="120" height="75"</font> <font color="#f1c40f">/&gt;</font>
+<font color="#f1c40f">&lt;/a&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <img src="../assets/imagenExample.jpg" width="120" height="75" alt="imagen html de ejemplo">
+                    </td>
+                </tr>
+            </table>
+            <p>La imagen de arriba enviará a la página de inicio. Puedes cambiarla hacia tu página de inicio y así tendrás una imagen con un link hacia tu página de inicio. HTML - Thumbnails (Miniaturas)</p>
+            <p>Los Thumbnails son versiones miniatura (menos kilobytes) de imágenes que tienen una calidad superior. Para crear una miniatura, guarda la imagen en una calidad mas baja a la original. Entonces vincula esta pequeña imagen a la imagen original de alta calidad.</p>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre style="white-space: normal;">
+<font color="#f1c40f">&lt;a href="/assets_tutorials/img/image.jpg" title="Html Enlaces - imagen html de ejemplo"&gt;</font>
+    <font color="#f1c40f">&lt;img</font> <font color="white">alt="imagen html de ejemplo" src="/assets_tutorials/img/image.jpg" width="66" height="49"</font> <font color="#f1c40f">/&gt;</font>
+<font color="#f1c40f">&lt;/a&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <img src="../assets/imagenExample.jpg" alt="imagen html de ejemplo" width="50" height="50">
+                    </td>
+                </tr>
+            </table>    
+            <hr>                        
+        </td>
+
+            <!-- Right Sidebar -->
+            <td width="20%" valign="top">
+                <h3>Referencias</h3>
+                <ul>
+                    <li><a href="#">Tabla de colores en HTML</a></li>
+                    <li><a href="#">Tabla de símbolos en HTML</a></li>
+                </ul>
+
+                <h3>Extras</h3>
+                <ul>
+                    <li><a href="#">La etiqueta marquee ¿cómo podemos usarla?</a></li>
+                </ul>
+
+                <h3>More CSS Tutorials</h3>
+                <ul>
+                    <li><a href="#">CSS Basics</a></li>
+                    <li><a href="#">CSS Colors and Backgrounds</a></li>
+                    <li><a href="#">CSS Flexbox Layout Model</a></li>
+                    <li><a href="#">CSS Transformations: 2D and 3D Effects</a></li>
+                    <li><a href="#">CSS Web Page from Scratch</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
