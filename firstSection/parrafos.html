@@ -1,104 +1,18 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML - Introducción al HTML</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #343a40;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header .flags img {
-            margin-left: 5px;
-        }
-        .container {
-            display: flex;
-            margin: 20px;
-        }
-        aside {
-            width: 25%;
-            background-color: white;
-            padding: 20px;
-            border-right: 1px solid #dee2e6;
-        }
-        main {
-            width: 50%;
-            background-color: white;
-            padding: 20px;
-        }
-        .right-sidebar {
-            width: 25%;
-            background-color: white;
-            padding: 20px;
-            border-left: 1px solid #dee2e6;
-        }
-        h1, h2, h3 {
-            color: #343a40;
-        }
-        nav a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        .button-group {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        .button-group button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-        .button-group button:hover {
-            background-color: #0056b3;
-        }
-        .sidebar-section {
-            margin-bottom: 20px;
-        }
-        .sidebar-section ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .sidebar-section ul li {
-            background-color: #f8f9fa;
-            padding: 10px;
-            margin-bottom: 5px;
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <div>Guía del principiante en HTML</div>
-        <div class="flags">
-            <img src="https://storage.googleapis.com/a1aa/image/RcBt-qZkPXVG8_VX6IGgaT6wY8dcBJdmGatWsCFvw34.jpg" alt="Flag of USA" width="20" height="20">
-            <img src="https://storage.googleapis.com/a1aa/image/rGF2PiXqgapptvXTLtZ7c3gQ-Ff1c15UXswO8g3ti2s.jpg" alt="Flag of Spain" width="20" height="20">
-            <img src="https://storage.googleapis.com/a1aa/image/EDa0p433eZeIXbGW-SMXBsOLo_mSqbG3Sq2RbGf96iE.jpg" alt="Flag of France" width="20" height="20">
-            <img src="https://storage.googleapis.com/a1aa/image/_nyMkjegqAb5ltJJrjTkmSBwqf7Hk6gRBLu6V8-HcaE.jpg" alt="Flag of Italy" width="20" height="20">
-            <img src="https://storage.googleapis.com/a1aa/image/pwfYT5N0_A5ucA8QXAc0LOqVfar7WNexGCvIjbvNig4.jpg" alt="Flag of Germany" width="20" height="20">
-            <img src="https://storage.googleapis.com/a1aa/image/vr52dep7UnrAuUFlytLkutVReJLxKH1u5VpL-eW5WM4.jpg" alt="Flag of Portugal" width="20" height="20">
-        </div>
-    </header>
-    <div class="container">
-        <aside>
-            <div class="sidebar-section">
-                <button>Las bases del HTML</button>
+
+    <!-- Table to create three sections -->
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr>
+            <!-- Left Sidebar -->
+            <td width="20%" valign="top">
+                <h3>Las bases del HTML</h3>
                 <ul>
                     <li>HTML - Introducción al HTML</li>
                     <li>HTML - Elementos</li>
@@ -111,92 +25,144 @@
                     <li>HTML - Listas</li>
                     <li>HTML - Elementos de formato</li>
                     <li>HTML - Códigos de color</li>
-                    <li>HTML - Font y basefont</li>
-                    <li>HTML - Enlaces e hipervínculos</li>
-                    <li>HTML - Símbolos</li>
-                    <li>HTML - E-mail (mailto)</li>
-                    <li>HTML - Imágenes</li>
-                    <li>HTML - Enlaces de imagen</li>
-                    <li>HTML - Formularios</li>
-                    <li>HTML - Tablas</li>
-                    <li>HTML - Bgcolor</li>
-                    <li>HTML - Imagen de fondo</li>
-                    <li>HTML - Marcos</li>
-                    <li>HTML - Diseños de página</li>
-                    <li>HTML - Comentarios</li>
-                    <li>HTML - Etiqueta meta</li>
-                    <li>HTML - Script</li>
-                    <li>HTML - Audio</li>
-                    <li>HTML - Video</li>
                 </ul>
-            </div>
-            <div class="sidebar-section">
-                <button>Etiquetas especiales</button>
-            </div>
-        </aside>
-        <main>
-            <h1>HTML - Párrafo</h1>
+            </td>
+
+            <!-- Main Content (Middle Section) -->
+            <td width="60%" valign="top">
+                <h1>HTML - Párrafo</h1>
             <nav>
                 <a href="#">HTML</a> &gt; <span>Tutorial HTML - Atributos</span>
             </nav>
             <p>El párrafo es un elemento base en la edición de texto. La etiqueta para un párrafo es &lt;p&gt;.</p>
             <p>Este atributo deja un espacio vacío encima y debajo del texto para evidenciarlo, así tanto el navegador como el usuario lo podrá distinguir como tal.</p>
-            <img src="../assets/PtagExample.png" alt="" width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre style="white-space: normal;">
+<font color="#f1c40f">&lt;p&gt;</font><font color="white">El párrafo es un elemento base en la edición de texto. La etiqueta para un párrafo es </font><font color="#f1c40f">&lt;em&gt;</font><font color="white">p</font><font color="#f1c40f">&lt;/em&gt;&lt;/p&gt;</font>
+            
+<font color="#f1c40f">&lt;p&gt;</font><font color="white">Este atributo ubica un espacio vacío encima y debajo del texto para hacerlo evidente, así el buscador podrá reconocerlo como es.</font><font color="#f1c40f">&lt;/p&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            
+            
             <br><br>
             <h3>Demo</h3>
-            <img src="../assets/PDemo.png" alt="" width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <p>El párrafo es un elemento base en la edición de texto. La etiqueta para un párrafo es <em>p</em>.</p>
+                        <p>Este atributo ubica un espacio vacío encima y debajo del texto para hacerlo evidente, así el buscador podrá reconocerlo como es.</p>
+                    </td>
+                </tr>
+            </table>            
             <h2>HTML - Párrafo justifido</h2>
             <hr>
             <p>Los párrafos pueden ser editados con la misma facilidad que lo hace un editor de texto normal y corriente. El siguiente ejemplo es para ejemplificar el atributo <em>justify</em></p>
-            <img src="../assets/justify.png" alt="" width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre style="white-space: normal;">
+<font color="#f1c40f">&lt;p</font> <font color="#f1c40f">align=</font><font color="#ff8080">"justify"</font><font color="#f1c40f">&gt;</font><font color="white">Este atributo ubica un espacio vacío encima y debajo del texto para hacerlo evidente, así el buscador podrá reconocerlo como es.</font><font color="#f1c40f">&lt;/p&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>            
             <br><br>
             <h3>Demo</h3>
-            <img src="../assets/justifyDemo.png" alt="" width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td align="justify">
+                        Este atributo ubica un espacio vacío encima y debajo del texto para hacerlo evidente, así el buscador podrá reconocerlo como es.
+                    </td>
+                </tr>
+            </table>            
             <h2>HTML - Párrafo centrado</h2>
             <hr>
-            <img src="../assets/justifyCenter.png" alt="" width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre style="white-space: normal;">
+<font color="#f1c40f">&lt;p</font> <font color="#f1c40f">align=</font><font color="#ff8080">"center"</font><font color="#f1c40f">&gt;</font><font color="white">Este atributo ubica un espacio vacío encima y </font><font color="#f1c40f">&lt;br /&gt;</font><font color="white">debajo del texto para hacerlo evidente, así el buscador podrá reconocerlo como es.</font><font color="#f1c40f">&lt;/p&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
             <br><br>
             <h3>Demo</h3>
-            <img src="../assets/justifyCenterDemo.png" alt="" width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td align="center">
+                        Este atributo ubica un espacio vacío encima y <br>
+                        debajo del texto para hacerlo evidente, así el buscador podrá reconocerlo como es.
+                    </td>
+                </tr>
+            </table>            
             <p>En este ejemplo cada linea del párrafo ha sido centrada en la mitad de la linea anterior.</p>
             <h2>HTML - El párrafo alineado a la derecha</h2>
             <hr>
-            <img src="../assets/alignRight.png" alt="" width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre style="white-space: normal;">
+<font color="#f1c40f">&lt;p</font> <font color="#d4d4d4">align=</font><font color="#ff8080">"right"</font><font color="#f1c40f">&gt;</font><font color="white">Este atributo deja un espacio vacío encima y debajo del texto para </font><font color="#f1c40f">&lt;br /&gt;</font><font color="white">evidenciarlo, así tanto el navegador como el usuario lo podrá distinguir como tal.</font><font color="#f1c40f">&lt;/p&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            
             <br><br>
             <h3>Demo</h3>
-            <img src="../assets/alignRightDemo.png" alt="" width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td align="right">
+                        Este atributo deja un espacio vacío encima y debajo del texto para <br>
+                        evidenciarlo, así tanto el navegador como el usuario lo podrá distinguir como tal.
+                    </td>
+                </tr>
+            </table>
+            
             <p>Todas las lineas del párrafo han sido organizadas, en el ejemplo de arriba, hacia la derecha.</p>  
             <hr>
-            <div class="button-group">
-                <button>HTML- Etiquetas</button>
-                <button>HTML - Parrafo</button>
-            </div>
-        </main>
-        <aside class="right-sidebar">
-            <div class="sidebar-section">
+            </td>
+            <!-- Right Sidebar -->
+            <td width="20%" valign="top">
                 <h3>Referencias</h3>
                 <ul>
-                    <li>Tabla de colores en HTML</li>
-                    <li>Tabla de símbolos en HTML</li>
+                    <li><a href="#">Tabla de colores en HTML</a></li>
+                    <li><a href="#">Tabla de símbolos en HTML</a></li>
                 </ul>
-            </div>
-            <div class="sidebar-section">
+
                 <h3>Extras</h3>
                 <ul>
-                    <li>La etiqueta marquee ¿cómo podemos usarla?</li>
+                    <li><a href="#">La etiqueta marquee ¿cómo podemos usarla?</a></li>
                 </ul>
-            </div>
-            <div class="sidebar-section">
+
                 <h3>More CSS Tutorials</h3>
                 <ul>
-                    <li>CSS Basics</li>
-                    <li>CSS Colors and Backgrounds</li>
-                    <li>CSS Flexbox Layout Model</li>
-                    <li>CSS Transformations: 2D and 3D Effects</li>
-                    <li>CSS Web Page from Scratch</li>
+                    <li><a href="#">CSS Basics</a></li>
+                    <li><a href="#">CSS Colors and Backgrounds</a></li>
+                    <li><a href="#">CSS Flexbox Layout Model</a></li>
+                    <li><a href="#">CSS Transformations: 2D and 3D Effects</a></li>
+                    <li><a href="#">CSS Web Page from Scratch</a></li>
                 </ul>
-            </div>
-        </aside>
-    </div>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

@@ -1,104 +1,18 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML - Introducción al HTML</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #343a40;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header .flags img {
-            margin-left: 5px;
-        }
-        .container {
-            display: flex;
-            margin: 20px;
-        }
-        aside {
-            width: 25%;
-            background-color: white;
-            padding: 20px;
-            border-right: 1px solid #dee2e6;
-        }
-        main {
-            width: 50%;
-            background-color: white;
-            padding: 20px;
-        }
-        .right-sidebar {
-            width: 25%;
-            background-color: white;
-            padding: 20px;
-            border-left: 1px solid #dee2e6;
-        }
-        h1, h2, h3 {
-            color: #343a40;
-        }
-        nav a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        .button-group {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        .button-group button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-        .button-group button:hover {
-            background-color: #0056b3;
-        }
-        .sidebar-section {
-            margin-bottom: 20px;
-        }
-        .sidebar-section ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .sidebar-section ul li {
-            background-color: #f8f9fa;
-            padding: 10px;
-            margin-bottom: 5px;
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <div>Guía del principiante en HTML</div>
-        <div class="flags">
-            <img src="https://storage.googleapis.com/a1aa/image/RcBt-qZkPXVG8_VX6IGgaT6wY8dcBJdmGatWsCFvw34.jpg" alt="Flag of USA" width="20" height="20">
-            <img src="https://storage.googleapis.com/a1aa/image/rGF2PiXqgapptvXTLtZ7c3gQ-Ff1c15UXswO8g3ti2s.jpg" alt="Flag of Spain" width="20" height="20">
-            <img src="https://storage.googleapis.com/a1aa/image/EDa0p433eZeIXbGW-SMXBsOLo_mSqbG3Sq2RbGf96iE.jpg" alt="Flag of France" width="20" height="20">
-            <img src="https://storage.googleapis.com/a1aa/image/_nyMkjegqAb5ltJJrjTkmSBwqf7Hk6gRBLu6V8-HcaE.jpg" alt="Flag of Italy" width="20" height="20">
-            <img src="https://storage.googleapis.com/a1aa/image/pwfYT5N0_A5ucA8QXAc0LOqVfar7WNexGCvIjbvNig4.jpg" alt="Flag of Germany" width="20" height="20">
-            <img src="https://storage.googleapis.com/a1aa/image/vr52dep7UnrAuUFlytLkutVReJLxKH1u5VpL-eW5WM4.jpg" alt="Flag of Portugal" width="20" height="20">
-        </div>
-    </header>
-    <div class="container">
-        <aside>
-            <div class="sidebar-section">
-                <button>Las bases del HTML</button>
+
+    <!-- Table to create three sections -->
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr>
+            <!-- Left Sidebar -->
+            <td width="20%" valign="top">
+                <h3>Las bases del HTML</h3>
                 <ul>
                     <li>HTML - Introducción al HTML</li>
                     <li>HTML - Elementos</li>
@@ -111,31 +25,12 @@
                     <li>HTML - Listas</li>
                     <li>HTML - Elementos de formato</li>
                     <li>HTML - Códigos de color</li>
-                    <li>HTML - Font y basefont</li>
-                    <li>HTML - Enlaces e hipervínculos</li>
-                    <li>HTML - Símbolos</li>
-                    <li>HTML - E-mail (mailto)</li>
-                    <li>HTML - Imágenes</li>
-                    <li>HTML - Enlaces de imagen</li>
-                    <li>HTML - Formularios</li>
-                    <li>HTML - Tablas</li>
-                    <li>HTML - Bgcolor</li>
-                    <li>HTML - Imagen de fondo</li>
-                    <li>HTML - Marcos</li>
-                    <li>HTML - Diseños de página</li>
-                    <li>HTML - Comentarios</li>
-                    <li>HTML - Etiqueta meta</li>
-                    <li>HTML - Script</li>
-                    <li>HTML - Audio</li>
-                    <li>HTML - Video</li>
                 </ul>
-            </div>
-            <div class="sidebar-section">
-                <button>Etiquetas especiales</button>
-            </div>
-        </aside>
-        <main>
-            <h1>HTML - Atributos</h1>
+            </td>
+
+            <!-- Main Content (Middle Section) -->
+            <td width="60%" valign="top">
+                <h1>HTML - Atributos</h1>
             <nav>
                 <a href="#">HTML</a> &gt; <span>Tutorial HTML - Atributos</span>
             </nav>
@@ -145,128 +40,212 @@
             <hr>
             <p>Estos dos atributos en general son lo mismo. No tienen un rol claro en el formato de los elementos pero son útiles detrás del escenario, con la ayuda del CSS. Hablaremos de su papel al mismo tiempo que estudiamos su sintaxis y su función en CSS.</p>
             <p>La idea es que cuando quieras crear una clase de etiquetas para después referenciarlas vía CSS, puedes elegir entre dos etiquetas parecidas, pero con atributos parecidos. Pero échale un vistazo al siguiente ejemplo:</p>
-            <img src="../assets/PTages.png" alt="" width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="#f1c40f">&lt;p</font> <font color="#f1c40f">id=</font><font color="#ff8080">"italicparagraph"</font><font color="#f1c40f">&gt;</font><font color="white">Párrafo tipo 1, itálica</font><font color="#f1c40f">&lt;/p&gt;</font>
+            
+<font color="#f1c40f">&lt;p</font> <font color="#f1c40f">id=</font><font color="#ff8080">"boldparagraph"</font><font color="#f1c40f">&gt;</font><font color="white">Párrafo tipo 2, negrilla</font><font color="#f1c40f">&lt;/p&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            
             <h2>El atributo name</h2>
             <hr>
             <p> <em>"name"</em> es un poco diferente a <em>id</em> y a <em>class</em>. Si le das un nombre a un elemento éste se convertirá en una variable para Javascript, ASP o PHP. Algo que es bastante común de encontrar en formularios y otros campos de texto interactivos.</p>
-            <img src="../assets/inputTag.png" alt="" width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="#f1c40f">&lt;p</font> <font color="#f1c40f">type=</font><font color="#ff8080">"text"</font><font color="#f1c40f">name=</font><font color="#ff8080">"my_text_field"</font><font color="#f1c40f">&gt;</font>            
+                        </pre>
+                    </td>
+                </tr>
+            </table>
             <br><br>
             <h3>Demo</h3>
-            <input type="text" name="my_text_field" />
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <input type="text" size="20">
+                    </td>
+                </tr>
+            </table>
+            
             <p>Este atributo no tiene ningún efecto sobre el lo que se muestra en el navegador o sobre el campo del texto en si, aunque en el fondo tiene un papel muy importante.</p>
             <h2>El atributo <em>title</em></h2>
             <hr>
             <p>El atributo <em>title</em> se usa normalmente para enlaces y muestra un pop-up, con el texto introducido, cuando se pone el cursor encima. El atributo title es una pieza fundamental para la optimización de contenidos para el motor de búsqueda como vera un poco mas tarde. Aunque, como ya he dicho, el atributo <em>title</em> se suele usar con los enlaces, se puede aplicar a la mayoría de etiquetas HTML.</p>
-            <img src="../assets/atributoTitle.png" alt="" width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="#f1c40f">&lt;h2</font> <font color="#f1c40f">title=</font><font color="#ff8080">"Soy un atributo de título!"</font><font color="#f1c40f">&gt;</font><b><font color="white">Un título cualquiera</font></b><font color="#f1c40f">&lt;/h2&gt;</font>
+            
+<font color="#f1c40f">&lt;a</font> <font color="#f1c40f">href=</font><font color="#ff8080">"#"</font> <font color="#d4d4d4">title=</font><font color="#ff8080">"Yo soy un enlace en HTML"</font><font color="#f1c40f">&gt;</font><font color="white">Pon el cursor encima mía</font><font color="#f1c40f">&lt;/a&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
             <br><br>
-            <h2 title="Soy un atributo de título!">Un título cualquiera</h2>
-            <a href="#" title="Yo soy un enlace en HTML">Pon el cursor encima mia</a>   
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <h2>Un título cualquiera</h2>
+                        <a href="#" title="Yo soy un enlace en HTML">Pon el cursor encima mía</a>
+                    </td>
+                </tr>
+            </table>
             <p>Pasa tu ratón por encima del titulo o el enlace de arriba, así veras la magia del atributo "title". Este atributo le dará a tu página un poco más de interactividad y ayudara también a Google a entender un poco mas, el contenido de tu web.</p>
             <h2>HTML - El atributo align</h2>
             <hr>
             <p>Si deseas alinear a un lado o al otro, algunos elementos de tu página, entonces tendrás a tu disposición el atributo "align". Puedes alinear hacia la izquierda, derecha o hacia el centro de la página casi cualquier elemento. Por defecto los elementos se alinean hacia la izquierda, excepto cuando se especifica otra alineación.</p>
-            <img src="../assets/alignTag.png" alt=""width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="#f1c40f">&lt;h2</font> <font color="#f1c40f">align=</font><font color="#ff8080">"center"</font><font color="#f1c40f">&gt;</font><font color="white">Título centrado</font><font color="#f1c40f">&lt;/h2&gt;</font>            
+                        </pre>
+                    </td>
+                </tr>
+            </table>
             <br><br>
             <h3>Demo</h3>
-            <img src="../assets/centerTitle.png" alt=""width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td align="center">
+                        <h2>Título centrado</h2>
+                    </td>
+                </tr>
+            </table>
             <h4>Otros ejemplos</h4>
-            <img src="../assets/alignExamples.png" alt=""width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="#f1c40f">&lt;h2</font> <font color="#f1c40f">align=</font><font color="#ff8080">"left"</font><font color="#f1c40f">&gt;</font><font color="white">Título alineado hacia la izquierda</font> <font color="#f1c40f">&lt;/h2&gt;</font>
+            
+<font color="#f1c40f">&lt;h2</font> <font color="#f1c40f">align=</font><font color="#ff8080">"center"</font><font color="#f1c40f">&gt;</font><font color="white">Título centrado</font> <font color="#f1c40f">&lt;/h2&gt;</font>
+            
+<font color="#f1c40f">&lt;h2</font> <font color="#f1c40f">align=</font><font color="#ff8080">"right"</font><font color="#f1c40f">&gt;</font><font color="white">Título alineado hacia la derecha</font> <font color="#f1c40f">&lt;/h2&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            
             <br><br>
             <h3>Demo</h3>
-            <img src="../assets/alignDemo.png" alt=""width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <h2 align="left">Título alineado hacia la izquierda</h2>
+                        <h2 align="center">Título centrado</h2>
+                        <h2 align="right">Título alineado hacia la derecha</h2>
+                    </td>
+                </tr>
+            </table>
+            
             <h2>Los valores por defecto para los atributos</h2>
             <hr>
             <p>La mayoría de las etiquetas son atributos estándar. Esto significa que si no especificas otro atributo, el navegador lo hará por ti. Por ejemplo un párrafo se alineará por sí solo hacia la izquierda, excepto cuando especificas otra cosa; lo mismo sucede con una tabla. A medida que practiques entenderás mas cosas sobre los valores por defecto de algunas etiquetas.</p>
             <h2>Atributos genéricos</h2>
             <hr>
             <p>Debes recordar que los atributos son utilizados para personalizar los elementos de una página web. He juntado aquí algunos de los atributos más comunes utilizados en HTML:</p>
-            <table style="width: 100%; border-collapse: collapse;">
-                <thead>
-                    <tr>
-                        <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Atributo</th>
-                        <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Opciones</th>
-                        <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Funci&oacute;n</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">align</td>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">right, left, center</td>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">Alineaci&oacute;n horizontal</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">valign</td>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">top, middle, bottom</td>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">Alineaci&oacute;n vertical</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">bgcolor</td>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">Valor num&eacute;rico, hexadecimal o RGB</td>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">Un fondo detr&aacute;s de el elemento.</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">background</td>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">URL</td>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">Un fondo detr&aacute;s de el elemento.</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">id</td>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">Definido por el usuario</td>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">Nombra un elemento que ser&aacute; usado con CSS.</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">class</td>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">Definido por el usuario</td>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">Clasifica un elemento que ser&aacute; usado con CSS.</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">width</td>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">Valor num&eacute;rico</td>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">Especifica el ancho de un elemento.</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">height</td>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">Valor num&eacute;rico</td>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">Especifica la altura de un elemento.</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">title</td>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">Definido por el usuario</td>
-                        <td style="border: 1px solid black; padding: 8px; text-align: left;">Muestra un "pop-up" con un t&iacute;tulo para un elemento.</td>
-                    </tr>
-                </tbody>
+            <table width="100%" cellspacing="0" cellpadding="10" border="1">
+                <tr>
+                    <th>Atributo</th>
+                    <th>Opciones</th>
+                    <th>Función</th>
+                </tr>
+                <tr>
+                    <td>align</td>
+                    <td>right, left, center</td>
+                    <td>Alineación horizontal</td>
+                </tr>
+                <tr>
+                    <td>valign</td>
+                    <td>top, middle, bottom</td>
+                    <td>Alineación vertical</td>
+                </tr>
+                <tr>
+                    <td>bgcolor</td>
+                    <td>Valor numérico, hexadecimal o RGB</td>
+                    <td>Un fondo detrás de el elemento.</td>
+                </tr>
+                <tr>
+                    <td>background</td>
+                    <td>URL</td>
+                    <td>Un fondo detrás de el elemento.</td>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Definido por el usuario</td>
+                    <td>Nombra un elemento que será usado con CSS.</td>
+                </tr>
+                <tr>
+                    <td>class</td>
+                    <td>Definido por el usuario</td>
+                    <td>Clasifica un elemento que será usado con CSS.</td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>Valor numérico</td>
+                    <td>Especifica el ancho de un elemento.</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>Valor numérico</td>
+                    <td>Especifica la altura de un elemento.</td>
+                </tr>
+                <tr>
+                    <td>title</td>
+                    <td>Definido por el usuario</td>
+                    <td>Muestra un "pop-up" con un título para un elemento.</td>
+                </tr>
             </table>
             <hr>
-            <div class="button-group">
-                <button>HTML- Etiquetas</button>
-                <button>HTML - Parrafo</button>
-            </div>
-        </main>
-        <aside class="right-sidebar">
-            <div class="sidebar-section">
+            </td>
+
+            <!-- Right Sidebar -->
+            <td width="20%" valign="top">
                 <h3>Referencias</h3>
                 <ul>
-                    <li>Tabla de colores en HTML</li>
-                    <li>Tabla de símbolos en HTML</li>
+                    <li><a href="#">Tabla de colores en HTML</a></li>
+                    <li><a href="#">Tabla de símbolos en HTML</a></li>
                 </ul>
-            </div>
-            <div class="sidebar-section">
+
                 <h3>Extras</h3>
                 <ul>
-                    <li>La etiqueta marquee ¿cómo podemos usarla?</li>
+                    <li><a href="#">La etiqueta marquee ¿cómo podemos usarla?</a></li>
                 </ul>
-            </div>
-            <div class="sidebar-section">
+
                 <h3>More CSS Tutorials</h3>
                 <ul>
-                    <li>CSS Basics</li>
-                    <li>CSS Colors and Backgrounds</li>
-                    <li>CSS Flexbox Layout Model</li>
-                    <li>CSS Transformations: 2D and 3D Effects</li>
-                    <li>CSS Web Page from Scratch</li>
+                    <li><a href="#">CSS Basics</a></li>
+                    <li><a href="#">CSS Colors and Backgrounds</a></li>
+                    <li><a href="#">CSS Flexbox Layout Model</a></li>
+                    <li><a href="#">CSS Transformations: 2D and 3D Effects</a></li>
+                    <li><a href="#">CSS Web Page from Scratch</a></li>
                 </ul>
-            </div>
-        </aside>
-    </div>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

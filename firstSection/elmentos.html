@@ -1,104 +1,18 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML - Introducción al HTML</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #343a40;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header .flags img {
-            margin-left: 5px;
-        }
-        .container {
-            display: flex;
-            margin: 20px;
-        }
-        aside {
-            width: 25%;
-            background-color: white;
-            padding: 20px;
-            border-right: 1px solid #dee2e6;
-        }
-        main {
-            width: 50%;
-            background-color: white;
-            padding: 20px;
-        }
-        .right-sidebar {
-            width: 25%;
-            background-color: white;
-            padding: 20px;
-            border-left: 1px solid #dee2e6;
-        }
-        h1, h2, h3 {
-            color: #343a40;
-        }
-        nav a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        .button-group {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        .button-group button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-        .button-group button:hover {
-            background-color: #0056b3;
-        }
-        .sidebar-section {
-            margin-bottom: 20px;
-        }
-        .sidebar-section ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .sidebar-section ul li {
-            background-color: #f8f9fa;
-            padding: 10px;
-            margin-bottom: 5px;
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <div>Guía del principiante en HTML</div>
-        <div class="flags">
-            <img src="https://storage.googleapis.com/a1aa/image/RcBt-qZkPXVG8_VX6IGgaT6wY8dcBJdmGatWsCFvw34.jpg" alt="Flag of USA" width="20" height="20">
-            <img src="https://storage.googleapis.com/a1aa/image/rGF2PiXqgapptvXTLtZ7c3gQ-Ff1c15UXswO8g3ti2s.jpg" alt="Flag of Spain" width="20" height="20">
-            <img src="https://storage.googleapis.com/a1aa/image/EDa0p433eZeIXbGW-SMXBsOLo_mSqbG3Sq2RbGf96iE.jpg" alt="Flag of France" width="20" height="20">
-            <img src="https://storage.googleapis.com/a1aa/image/_nyMkjegqAb5ltJJrjTkmSBwqf7Hk6gRBLu6V8-HcaE.jpg" alt="Flag of Italy" width="20" height="20">
-            <img src="https://storage.googleapis.com/a1aa/image/pwfYT5N0_A5ucA8QXAc0LOqVfar7WNexGCvIjbvNig4.jpg" alt="Flag of Germany" width="20" height="20">
-            <img src="https://storage.googleapis.com/a1aa/image/vr52dep7UnrAuUFlytLkutVReJLxKH1u5VpL-eW5WM4.jpg" alt="Flag of Portugal" width="20" height="20">
-        </div>
-    </header>
-    <div class="container">
-        <aside>
-            <div class="sidebar-section">
-                <button>Las bases del HTML</button>
+
+    <!-- Table to create three sections -->
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr>
+            <!-- Left Sidebar -->
+            <td width="20%" valign="top">
+                <h3>Las bases del HTML</h3>
                 <ul>
                     <li>HTML - Introducción al HTML</li>
                     <li>HTML - Elementos</li>
@@ -111,31 +25,12 @@
                     <li>HTML - Listas</li>
                     <li>HTML - Elementos de formato</li>
                     <li>HTML - Códigos de color</li>
-                    <li>HTML - Font y basefont</li>
-                    <li>HTML - Enlaces e hipervínculos</li>
-                    <li>HTML - Símbolos</li>
-                    <li>HTML - E-mail (mailto)</li>
-                    <li>HTML - Imágenes</li>
-                    <li>HTML - Enlaces de imagen</li>
-                    <li>HTML - Formularios</li>
-                    <li>HTML - Tablas</li>
-                    <li>HTML - Bgcolor</li>
-                    <li>HTML - Imagen de fondo</li>
-                    <li>HTML - Marcos</li>
-                    <li>HTML - Diseños de página</li>
-                    <li>HTML - Comentarios</li>
-                    <li>HTML - Etiqueta meta</li>
-                    <li>HTML - Script</li>
-                    <li>HTML - Audio</li>
-                    <li>HTML - Video</li>
                 </ul>
-            </div>
-            <div class="sidebar-section">
-                <button>Etiquetas especiales</button>
-            </div>
-        </aside>
-        <main>
-            <h1>HTML - Elmentos</h1>
+            </td>
+
+            <!-- Main Content (Middle Section) -->
+            <td width="60%" valign="top">
+                <h1>HTML - Elmentos</h1>
             <nav>
                 <a href="#">HTML</a> &gt; <span>Tutorial HTML - Elmentos</span>
             </nav>
@@ -151,58 +46,110 @@
             <hr>
             <p>Un documento HTML siempre empezará y terminará con una etiqueta &lt;html&gt; y su respectivo &lt;/html&gt;. Esta es la estructura estándar de un documento HTML.</p>
             <p>Por favor abre un bloc de notas y copia el siguiente código:</p>
-            <img src="../assets/htmlTag.png" alt="" width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <!-- Header Row -->
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <!-- Code Block Row -->
+                <tr bgcolor="#2c3e50">
+                    <td><font color="#f1c40f">&lt;html&gt;<br><br>&lt;/html&gt;</font></td>
+                </tr>
+            </table>
             <p>Guarda el documento desde "Archivo/Guardar como". Selecciona "Todos los archivos" y nombra el nuevo archivo como "index.html". Dale "Guardar". Ahora abre el archivo en un navegador de manera que puedas actualizar la página (F5).</p>
             <p>Si hiciste todo correctamente podrás ver tu página web, en blanco!</p>
             <h2>El elemento head</h2>
             <hr>
             <p>El elemento head es el que va a continuación. Mientras lo pongas entre html y body todo debería ir bien. Head no tiene una función evidente, así que hablaremos de este aspecto en los siguientes tutoriales. Sin embargo quiero mencionar que &lt;head&gt; puede ofrecerle información muy útil al navegador. Aquí puedes introducir otros códigos como Javascript o CSS.</p>
             <p>Por el momento dejaremos así con la excepción de que introducimos el elemento desde la lista, pero primero observemos todo sin él:</p>
-            <img src="../assets/headTag.png" alt="" width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <!-- Header Row -->
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <!-- Code Block Row -->
+                <tr bgcolor="#2c3e50">
+                    <td><font color="#f1c40f">&lt;html&gt;<br><br>&lt;head&gt;<br><br>&lt;/head&gt;<br><br>&lt;/html&gt;</font></td>
+                </tr>
+            </table>
             <p>Si guardas el documento e intentas actualizar la página web desde el navegador, no veras ninguna diferencia. Ten un poco de paciencia, porque a continuación estudiaremos algunos elementos visibles.</p>
             <h2>El elemento title</h2>
             <hr>
             <p>Para que todo salga bien tendrás que poner la etiqueta title dentro de la etiqueta head. Lo que escribas dentro de estas dos etiquetas de <em>title</em> ( &lt;title&gt; y &lt;/title&gt;) será visto como el nombre del navegador, normalmente en la parte superior derecha. A continuación tenemos el código HTML</p>
-            <img src="../assets/titleTag.png" alt="" width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <!-- Header Row -->
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <!-- Code Block Row -->
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="#f1c40f">&lt;html&gt;</font>
+    <font color="#f1c40f">&lt;head&gt;</font>
+        <font color="#d4d4d4">&lt;title&gt;</font><font color="#f1c40f"> Mi primera página web! </font><font color="#d4d4d4">&lt;/title&gt;</font>
+    <font color="#f1c40f">&lt;/head&gt;</font>
+<font color="#f1c40f">&lt;/html&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
             <p>Guarda el archivo y abrelo en tu navegador. Podrás ver el título en la pestaña del navegador en la parte superior izquierda (en la mayoría de los navegadores) o derecha (en algunos).</p>
             <p>Puedes ponerle el nombre que quieras, solo recuerda que los nombres descriptivos son los más fáciles de encontrar después.</p>
             <h2>El elemento body</h2>
             <hr>
             <p>El elemento body es el que define el comienzo del contenido de la página en sí misma (títulos, párrafos, fotos, música y todo lo demás). Como puedes ver en el menú de la izquierda, tratamos uno por uno, todos estos elementos del contenido.</p>
             <p>Por ahora lo que necesitas recordar es que body abarca todo el contenido de la página.</p>
-            <img src="../assets/bodyTag.png" alt="" width="100%">
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <!-- Header Row -->
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <!-- Code Block Row -->
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="#f1c40f">&lt;html&gt;</font>
+    <font color="#f1c40f">&lt;head&gt;</font>
+        <font color="#f1c40f">&lt;title&gt;</font><font color="#d4d4d4"> Mi primera página web! </font><font color="f1c40f">&lt;/title&gt;</font>
+    <font color="#f1c40f">&lt;/head&gt;</font>
+        
+        <font color="#f1c40f">&lt;body&gt;</font>
+                <font color="#ffffff">Hola chicos! Aquí pondremos el contenido un poco más tarde!</font>
+        <font color="#f1c40f">&lt;/body&gt;</font>
+        
+<font color="#f1c40f">&lt;/html&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
             <p>Ahora guarda y actualiza tu pagina HTML. Deberías poder ver este mensaje en tu navegador. Pero esto es solo el comiendo, pasa al siguiente tutorial para que aprendas sobre los siguientes elementos de una pagina html.</p>            
             <hr>
-            <div class="button-group">
-                <button>HTML- Introducción al HTML</button>
-                <button>HTML - Etiquetas</button>
-            </div>
-        </main>
-        <aside class="right-sidebar">
-            <div class="sidebar-section">
+            </td>
+
+            <!-- Right Sidebar -->
+            <td width="20%" valign="top">
                 <h3>Referencias</h3>
                 <ul>
-                    <li>Tabla de colores en HTML</li>
-                    <li>Tabla de símbolos en HTML</li>
+                    <li><a href="#">Tabla de colores en HTML</a></li>
+                    <li><a href="#">Tabla de símbolos en HTML</a></li>
                 </ul>
-            </div>
-            <div class="sidebar-section">
+
                 <h3>Extras</h3>
                 <ul>
-                    <li>La etiqueta marquee ¿cómo podemos usarla?</li>
+                    <li><a href="#">La etiqueta marquee ¿cómo podemos usarla?</a></li>
                 </ul>
-            </div>
-            <div class="sidebar-section">
+
                 <h3>More CSS Tutorials</h3>
                 <ul>
-                    <li>CSS Basics</li>
-                    <li>CSS Colors and Backgrounds</li>
-                    <li>CSS Flexbox Layout Model</li>
-                    <li>CSS Transformations: 2D and 3D Effects</li>
-                    <li>CSS Web Page from Scratch</li>
+                    <li><a href="#">CSS Basics</a></li>
+                    <li><a href="#">CSS Colors and Backgrounds</a></li>
+                    <li><a href="#">CSS Flexbox Layout Model</a></li>
+                    <li><a href="#">CSS Transformations: 2D and 3D Effects</a></li>
+                    <li><a href="#">CSS Web Page from Scratch</a></li>
                 </ul>
-            </div>
-        </aside>
-    </div>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

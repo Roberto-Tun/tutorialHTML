@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Introducción al HTML</title>
+</head>
+<body>
+
+    <!-- Table to create three sections -->
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr>
+            <!-- Left Sidebar -->
+            <td width="20%" valign="top">
+                <h3>Las bases del HTML</h3>
+                <ul>
+                    <li>HTML - Introducción al HTML</li>
+                    <li>HTML - Elementos</li>
+                    <li>HTML - Etiquetas</li>
+                    <li>HTML - Atributos</li>
+                    <li>HTML - Párrafo</li>
+                    <li>HTML - Títulos y encabezados</li>
+                    <li>HTML - Salto de línea</li>
+                    <li>HTML - Línea horizontal</li>
+                    <li>HTML - Listas</li>
+                    <li>HTML - Elementos de formato</li>
+                    <li>HTML - Códigos de color</li>
+                </ul>
+            </td>
+
+            <!-- Main Content (Middle Section) -->
+            <td width="60%" valign="top">
+                <h1>HTML - Enlaces e hipervinculos</h1>
+            <nav>
+                <a href="#">HTML</a> &gt; <span>Tutorial HTML - Enlaces e hipervinculos</span>
+            </nav>
+            <p>El atributo <strong>href</strong> nombra la conexión hacia otra página web. En realidad es el lugar donde será dirigido el usuario cuando haga click en el <strong>enlace o link HTML</strong>.</p>
+            <p>Los links pueden ser:</p>
+            <ul>
+                <li><strong>enlaces internos</strong> - hacia lugares específicos desde la página (anclas)</li>
+                <li><strong>enlaces locales</strong> - hacia otras páginas desde el mismo dominio</li>
+                <li><strong>enlaces globales</strong> - hacia otros dominios, fuera de la página web</li>
+            </ul>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="white">Interno - href="#nombredelancla</font>    
+<font color="white">Local - href="../img/foto.jpg"</font>
+<font color="white">Global - href="http://www.tutorialehtml.com/"</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <h2>HTML - Enlaces de texto</h2>
+            <hr>
+            <p>Para fijar el comienzo y el fin de un ancla se puede usar <code>&lt;a&gt;</code> y con su etiqueta de cierre <code>&lt;/a&gt;</code>. 
+                Escoge el tipo de atributo que necesites, después escríbelo dentro de la etiqueta. 
+                El atributo <code>"href"</code> define la página que se abrirá al pinchar en el enlace.</p>                
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="#f1c40f">&lt;a&gt;&lt;href="http://www.tutorialehtml.com/"&gt;</font><font color="white">Tutoriales HTML</font><font color="#f1c40f">&lt;/font&gt;&lt;/a&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <a href="#">Tutoriales HTML</a>
+                    </td>
+                </tr>
+            </table>                               
+            <h2>El atributo title</h2>
+            <hr>
+            <p>Ya hemos hablado sobre el atributo title, que se puede usar con muchas otras etiquetas. Pero el title de un enlace tiene un especial significado para los enlaces y en especial los enlaces globales. Alguna ves los enlaces desde web externas hacia tu web no tienen mucho texto para describir tu web o simplemente ponen "pincha aqui". El atributi title es muy importante en estos casos en particular, pudiendo proporcionar una (muy) breve descripcion sobre tu pagina.</p>
+            <p>Pasa con el raton por encima de texto de abajo</p>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre style="white-space: normal;">
+<font color="#f1c40f">&lt;a</font> <font color="#d4d4d4">href=</font><font color="#ff8080">"http://www.tutorialehtml.com/"</font> 
+    <font color="#d4d4d4">title=</font><font color="#ff8080">"Aprende más sobre el lenguaje HTML"</font><font color="#f1c40f">&gt;</font>
+    <font color="white">Click aquí</font><font color="#f1c40f">&lt;/a&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <a href="http://www.tutorialehtml.com/" title="Aprende más sobre el lenguaje HTML">
+                            Click aquí
+                        </a>
+                    </td>
+                </tr>
+            </table>            
+            <h2>HTML - El atributo target</h2>            
+            <hr>
+            <p>El atributo target le indica al navegador si este necesita abrir una nueva página en una nueva ventana o en la misma ventana.</p>
+            <table border="1" cellspacing="0" cellpadding="10">
+                <tr>
+                    <td rowspan="5">target="</td>
+                </tr>
+                <tr>
+                    <td><code>_blank"</code></td>
+                    <td>Abre una nueva ventana</td>
+                </tr>
+                <tr>
+                    <td><code>_self"</code></td>
+                    <td>Abre una página en la misma ventana</td>
+                </tr>
+                <tr>
+                    <td><code>_parent"</code></td>
+                    <td>Abre una nueva página en la ventana padre del link</td>
+                </tr>
+                <tr>
+                    <td><code>_top"</code></td>
+                    <td>Abre la ventana en el mismo navegador, cancelando todos los frames</td>
+                </tr>
+            </table>
+            
+            <p>El siguiente ejemplo muestra cómo una nueva página puede ser abierta en una ventana del navegador. De esta manera podemos permanecer en la página del tutorial y abrir una nueva página de navegación.</p>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre style="white-space: normal;">
+<font color="#f1c40f">&lt;a href="http://www.google.com/" target="_blank"&gt;</font><font color="white">Google</font><font color="#f1c40f">&lt;/a&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <a href="http://www.google.com/" target="_blank">Google</a>
+                    </td>
+                </tr>
+            </table>                       
+            <h2>HTML - Anclas</h2>
+            <hr>
+            <p>Es utilizado para vincular dos secciones de la misma página. Así que necesitamos darle un nombre a esas secciones, pero para esto es necesario darle un vistazo al siguiente ejemplo.</p>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="#f1c40f">&lt;h1&gt;</font><font color="white">HTML - Hipertexto de referencia / href</font><font color="#f1c40f">&lt;a name="top"&gt;</font><font color="#f1c40f">&lt;/a&gt;&lt;/h1&gt;</font>
+<font color="#f1c40f">&lt;h1&gt;</font><font color="white">HTML - Links de texto</font><font color="#f1c40f">&lt;a name="text"&gt;</font><font color="#f1c40f">&lt;/a&gt;&lt;/h1&gt;</font>
+<font color="#f1c40f">&lt;h1&gt;</font><font color="white">HTML - Texto E-mail</font><font color="#f1c40f">&lt;a name="email"&gt;</font><font color="#f1c40f">&lt;/a&gt;&lt;/h1&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <h1>HTML - Hipertexto de referencia / href</h1>
+                        <h2>HTML - Links de texto</h2>
+                        <h2>HTML - Texto E-mail</h2>
+                    </td>
+                </tr>
+            </table>            
+            <p>Despues de aplicar un name a los elementos de arriba, vamos a tener que crear los enlaces que van a unirlos.</p>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="#f1c40f">&lt;a href="#top"&gt;</font><font color="white">Ir al principio</font><font color="#f1c40f">&lt;/a&gt;</font>
+<font color="#f1c40f">&lt;a href="#text"&gt;</font><font color="white">Aprende sobre links de texto</font><font color="#f1c40f">&lt;/a&gt;</font>
+<font color="#f1c40f">&lt;a href="#email"&gt;</font><font color="white">Aprende sobre direcciones e-mail</font><font color="#f1c40f">&lt;/a&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <p>
+                            <a href="#top">Ir al principio</a>
+                            <a href="#text">Aprende sobre links de texto</a>
+                            <a href="#email">Aprende sobre direcciones e-mail</a>
+                        </p>
+                    </td>
+                </tr>
+            </table>            
+            <h2>HTML - Link de E-mail</h2>
+            <hr>
+            <p>Hacer un vínculo de E-mail es muy simple. Si quieres que alguien te escriba un email la mejor manera será poner a su dispocisión un link con tu email y un tema preetablecido.</p>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre style="white-space: normal;">
+<font color="#f1c40f">&lt;a href="mailto:someone@example.com?subject=Questions"&gt;</font>
+<font color="white">Enviar preguntas por correo</font>
+<font color="#f1c40f">&lt;/a&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <a href="mailto:someone@example.com?subject=Questions">Enviar preguntas por correo</a>
+                    </td>
+                </tr>
+            </table>            
+            <p>En caso de que el tema no sea suficiente y desees agregar algo mas al contenido del email, puedes hacerlo con la ayuda del siguiente código:</p>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre style="white-space: normal;">
+<font color="#f1c40f">&lt;a href=</font><font color="#f1c40f">"mailto:someone@example.com?subject=Questions&body=Escribe aquí si tienes preguntas"</font><font color="#f1c40f">&gt;</font>
+    <font color="white">Enviar preguntas por correo</font>
+<font color="#f1c40f">&lt;/a&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>            
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <a href="mailto:someone@example.com?subject=Questions&body=Escribe aquí si tienes preguntas">Enviar preguntas por correo</a>
+                    </td>
+                </tr>
+            </table>      
+            <h2>HTML - Links de descarga</h2>
+            <hr>
+            <p>Un link de descarga es igual que un link normal de texto. El problema surge cuando queremos descargar una fotografía. La mejor solución es utilizar una miniatura con un link, pero hablaremos mas sobre este problema en la siguiente lección.</p>      
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre style="white-space: normal;">
+<font color="#f1c40f">&lt;a href="http://www.tutorialehtml.com/htmlT/text.zip"&gt;</font><font color="white">Descargar documento de texto</font><font color="#f1c40f">&lt;/a&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>            
+            <h2>HTML - Links de suscripcion a youtube</h2>
+            <hr>
+            <p>Cuando vemos un video en una pagina de youtube, normalmente tenemos el boton para suscribirnos, justo al lado. Pero que pasa cuando el video se inserta en nuestra propia web. Podemos simular un boton muy parecido de la siguiente forma. Sientete libre de hacer click para ver como funciona.</p>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre style="white-space: normal;">
+<font color="#f1c40f">&lt;a</font> <font color="white">href=</font><font color="#95a5a6">"https://www.youtube.com/channel/UCpGSnR6YSFi9mdNPCQ5JyA?sub_confirmation=0"</font> 
+    <font color="white">target=</font><font color="#95a5a6">"_blank"</font><font color="#f1c40f">&gt;</font><font color="white">Suscríbete al canal</font><font color="#f1c40f">&lt;/a&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <a href="https://www.youtube.com/channel/UCpGSnR6YSFi9mdNPCQ5JyA?sub_confirmation=0" target="_blank">
+                            Suscríbete al canal
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <h2>HTML - Link por defecto/link base</h2>
+            <hr>
+            <p>Usa la etiqueta <code>"base"</code> en el interior del elemento <code>&lt;head&gt;</code> para establecer un link base. 
+                Esto es necesario en caso de que tengas un link en algún lugar el cual no funciona o en caso de que el destino no exista más. 
+                El link base envía al usuario hacia la dirección específica. Normalmente, envía al usuario a la página de inicio, 
+                pero también se acepta otra página, eventualmente una página hecha con este propósito.</p>
+                <table width="100%" cellspacing="0" cellpadding="10">
+                    <tr bgcolor="#e67e22">
+                        <td><b><font color="white">HTML</font></b></td>
+                    </tr>
+                    <tr bgcolor="#2c3e50">
+                        <td>
+                            <pre style="white-space: normal;">
+<font color="#f1c40f">&lt;head&gt;</font>
+
+    <font color="#f1c40f">&lt;base href="http://www.tutorialehtml.com/"&gt;</font>
+
+<font color="#f1c40f">&lt;/head&gt;</font>
+                            </pre>
+                        </td>
+                    </tr>
+                </table>
+            <hr>                        
+        </td>
+
+            <!-- Right Sidebar -->
+            <td width="20%" valign="top">
+                <h3>Referencias</h3>
+                <ul>
+                    <li><a href="#">Tabla de colores en HTML</a></li>
+                    <li><a href="#">Tabla de símbolos en HTML</a></li>
+                </ul>
+
+                <h3>Extras</h3>
+                <ul>
+                    <li><a href="#">La etiqueta marquee ¿cómo podemos usarla?</a></li>
+                </ul>
+
+                <h3>More CSS Tutorials</h3>
+                <ul>
+                    <li><a href="#">CSS Basics</a></li>
+                    <li><a href="#">CSS Colors and Backgrounds</a></li>
+                    <li><a href="#">CSS Flexbox Layout Model</a></li>
+                    <li><a href="#">CSS Transformations: 2D and 3D Effects</a></li>
+                    <li><a href="#">CSS Web Page from Scratch</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
