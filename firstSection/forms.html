@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Introducción al HTML</title>
+</head>
+<body>
+
+    <!-- Table to create three sections -->
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr>
+            <!-- Left Sidebar -->
+            <td width="20%" valign="top">
+                <h3>Las bases del HTML</h3>
+                <ul>
+                    <li>HTML - Introducción al HTML</li>
+                    <li>HTML - Elementos</li>
+                    <li>HTML - Etiquetas</li>
+                    <li>HTML - Atributos</li>
+                    <li>HTML - Párrafo</li>
+                    <li>HTML - Títulos y encabezados</li>
+                    <li>HTML - Salto de línea</li>
+                    <li>HTML - Línea horizontal</li>
+                    <li>HTML - Listas</li>
+                    <li>HTML - Elementos de formato</li>
+                    <li>HTML - Códigos de color</li>
+                </ul>
+            </td>
+
+            <!-- Main Content (Middle Section) -->
+            <td width="60%" valign="top">
+                <h1>HTML - Formularios</h1>
+            <nav>
+                <a href="#">HTML</a> &gt; <span>Tutorial HTML - Formularios</span>
+            </nav>
+            <p><strong>los formularios</strong> son de las herramientas mas importantes utilizadas por un administrador web para reunir información importante sobre un usuario de Internet, información como e-mail, nombre, dirección, teléfono o cualquier otro tipo de información.</p>
+            <p>Basados en la necesidad, la información puede siempre ser almacenada en un archivo o base de datos, puedes hacer estadísticas. Puedes crear formularios de registro o suscripciones para la información presentada en tu página web, y muchas otras.</p>
+            <h2>HTML - Campos de texto</h2>
+            <hr>
+            <p>Antes de entrar en detalles, tenemos que exponer un poco lo básico de un <strong>formulario HTML</strong>. Los campos de texto poseen unos pocos atributos que han sido mencionados desde el principio:</p>
+            <ul>
+                <li><strong>type - </strong>establece el tipo del campo de texto. Por ejemplo: texto, contraseña o botón de envío..</li>
+                <li><strong>name - </strong>le da al campo de texto un nombre para poder hacer referencia a ese campo desde un lenguaje de servidor como por ejemplo PHP, se se encarga de recibir y procesar el valor del campo.</li>
+                <li><strong>size - </strong>establece el tamaño del campo. Aunque se recomienda usar CSS ello.</li>
+                <li><strong>maxlenght - </strong>el número máximo de caracteres que pueden ser introducidos.</li>
+            </ul>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre >
+<font color="yellow">&lt;form</font> <font color="lightblue">method="post"</font> <font color="lightblue">action="process.php"</font><font color="yellow">&gt;</font>
+    <font color="white">Nombre:</font> <font color="yellow">&lt;input</font> <font color="lightblue">type="text"</font> <font color="lightblue">size="10"</font> <font color="lightblue">maxlength="40"</font> <font color="lightblue">name="nombre"</font><font color="yellow">&gt;</font> <font color="yellow">&lt;br /&gt;</font>
+    <font color="white">Contraseña:</font> <font color="yellow">&lt;input</font> <font color="lightblue">type="password"</font> <font color="lightblue">size="10"</font> <font color="lightblue">maxlength="10"</font> <font color="lightblue">name="contraseña"</font><font color="yellow">&gt;</font>
+<font color="yellow">&lt;/form&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <form method="post" action="process.php">
+                            Nombre: <input type="text" size="10" maxlength="40" name="nombre"> <br />
+                            Contraseña: <input type="password" size="10" maxlength="10" name="contraseña">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+            <p>No uses este código para un formulario de login. Los datos del formulario no serán encriptados y no viajaran de manera segura.</p>
+            <h2>HTML - Formularios Email</h2>
+            <hr>
+            <p>Ahora vamos a añadir el botón de enviar. Generalmente, el botón de enviar debería ser el último y suele tener el atributo value igual a "Enviar", "Enviar formulario" o algo similar.</p>
+            <p>Tambien debemos especificar un destino para los datos ingresados en el formulario, como también el modo de trasferencia. Esto puede hacerse añadiendo los siguientes atributos:</p>
+            <ul>
+                <li><strong>method - </strong>Usaremos el método <strong><em>post</em></strong>. Este envía el formulario con la información insertada sin mostrar los detalles del usuario.</li>
+                <li><strong>action - </strong>Este se usa para especificar la URL hacia la que será enviada la información para ser procesada.</li>
+            </ul>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="yellow">&lt;form</font> <font color="lightblue">method="post"</font> <font color="lightblue">action="process.php"</font><font color="yellow">&gt;</font>
+    <font color="white">Nombre:</font> <font color="yellow">&lt;input</font> <font color="lightblue">type="text"</font> <font color="lightblue">size="10"</font> <font color="lightblue">maxlength="40"</font> <font color="lightblue">name="nombre"</font><font color="yellow">&gt;</font><font color="yellow">&lt;br /&gt;</font>
+    <font color="white">Contraseña:</font> <font color="yellow">&lt;input</font> <font color="lightblue">type="password"</font> <font color="lightblue">size="10"</font> <font color="lightblue">maxlength="10"</font> <font color="lightblue">name="contraseña"</font><font color="yellow">&gt;</font><font color="yellow">&lt;br /&gt;</font>
+
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="submit"</font> <font color="lightblue">value="Enviar formulario"</font><font color="yellow">&gt;</font>
+<font color="yellow">&lt;/form&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <form method="post" action="process.php">
+                            Nombre: <input type="text" size="10" maxlength="40" name="nombre"><br />
+                            Contraseña: <input type="password" size="10" maxlength="10" name="contraseña"><br />
+                            
+                            <input type="submit" value="Enviar formulario">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+            <p>Para procesar los datos, una ves que el formulario se ha enviado, debes saber que se necesita conocimiento de un lenguaje de servidor tipo PHP, ASP, Ruby, Python o cualquier otro.</p>
+            <h2>HTML - Botones de Radio</h2>
+            <hr>
+            <p>Los botones de radio son muy populares, útiles y fáciles de usar. El ejemplo mas usado sería una pregunta con mas de una opción de respuesta. Los atributos deben ser los siguientes:</p>
+            <ul>
+                <li><strong>value - </strong>especifica qué será enviado en caso de que el usuario selecciona ese valor concreto. Sólo se enviará un único valor.</li>
+                <li><strong>name - </strong>determina a qué grupo de botones pertenece el botón seleccionado.</li>
+            </ul>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="yellow">&lt;form</font> <font color="lightblue">method="post"</font> <font color="lightblue">action="mailto:youremail@email.com"</font><font color="yellow">&gt;</font>
+
+    <font color="white">¿Qué clase de zapatos llevas puestos ? </font><font color="yellow">&lt;br /&gt;</font>
+
+    <font color="yellow">&lt;label&gt;</font><font color="white">Color </font><font color="yellow">&lt;/label&gt;</font> <font color="yellow">&lt;br /&gt;</font>
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="radio"</font> <font color="lightblue">name="color"</font> <font color="lightblue">value="dark"</font><font color="yellow">&gt;</font><font color="white">Oscuro </font> <font color="yellow">&lt;br /&gt;</font>
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="radio"</font> <font color="lightblue">name="color"</font> <font color="lightblue">value="light"</font><font color="yellow">&gt;</font><font color="white">Claro </font> <font color="yellow">&lt;br /&gt;</font>
+
+    <font color="yellow">&lt;label&gt;</font><font color="white">Tamaño: </font><font color="yellow">&lt;/label&gt;</font> <font color="yellow">&lt;br /&gt;</font>
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="radio"</font> <font color="lightblue">name="size"</font> <font color="lightblue">value="small"</font><font color="yellow">&gt;</font><font color="white">Pequeño </font> <font color="yellow">&lt;br /&gt;</font>
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="radio"</font> <font color="lightblue">name="size"</font> <font color="lightblue">value="average"</font><font color="yellow">&gt;</font><font color="white">Mediano </font><font color="yellow">&lt;br /&gt;</font>
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="radio"</font> <font color="lightblue">name="size"</font> <font color="lightblue">value="big"</font><font color="yellow">&gt;</font><font color="white">Grande </font> <font color="yellow">&lt;br /&gt;</font>
+
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="submit"</font> <font color="lightblue">value="Enviar formulario"</font><font color="yellow">&gt;</font>
+
+<font color="yellow">&lt;/form&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <form method="post" action="mailto:youremail@email.com">
+
+                            ¿Qué clase de zapatos llevas puestos ? <br />
+                            
+                            <label>Color:</label> <br />
+                            <input type="radio" name="color" value="dark">Oscuro <br />
+                            <input type="radio" name="color" value="light">Claro <br />
+                            
+                            <label>Tamaño:</label><br />
+                            <input type="radio" name="size" value="small">Pequeño <br />
+                            <input type="radio" name="size" value="average">Mediano <br />
+                            <input type="radio" name="size" value="big">Grande <br />
+                        
+                            <input type="submit" value="Enviar formulario">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+            <p>En caso de que reemplazes la dirección email por la tuya recibirán un email con: 'size=(tamaño elegido) color=(color elegido)'.</p>
+            <h2>HTML - Checkbox (Casilla de verificación)</h2>
+            <hr>
+            <p>Usar casillas de verificación o checkbox le permite al ususario escoger una, dos o más variantes de respuesta. Los atributos name y value se usan de la misma que para los botones radio.</p>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre style="white-space: normal;">
+<font color="yellow">&lt;input</font> <font color="lightblue">type="text"</font> <font color="lightblue">size="12"</font> <font color="yellow">/&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <input type="text" size="12" />
+                    </td>
+                </tr>
+            </table>
+            <h2>HTML - Comentarios Javascript</h2>
+            <hr>
+            <p>Los comentarios también se usan en Javascript. Sin embargo hablaremos de esto en otro tutorial, dedicado a este tema. Estos comentarios tendrán un objetivo diferente al de informar.</p>
+            <hr>
+        </td>
+            <!-- Right Sidebar -->
+            <td width="20%" valign="top">
+                <h3>Referencias</h3>
+                <ul>
+                    <li><a href="#">Tabla de colores en HTML</a></li>
+                    <li><a href="#">Tabla de símbolos en HTML</a></li>
+                </ul>
+
+                <h3>Extras</h3>
+                <ul>
+                    <li><a href="#">La etiqueta marquee ¿cómo podemos usarla?</a></li>
+                </ul>
+
+                <h3>More CSS Tutorials</h3>
+                <ul>
+                    <li><a href="#">CSS Basics</a></li>
+                    <li><a href="#">CSS Colors and Backgrounds</a></li>
+                    <li><a href="#">CSS Flexbox Layout Model</a></li>
+                    <li><a href="#">CSS Transformations: 2D and 3D Effects</a></li>
+                    <li><a href="#">CSS Web Page from Scratch</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

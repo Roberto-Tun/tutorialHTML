@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Introducción al HTML</title>
+</head>
+<body>
+
+    <!-- Table to create three sections -->
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr>
+            <!-- Left Sidebar -->
+            <td width="20%" valign="top">
+                <h3>Las bases del HTML</h3>
+                <ul>
+                    <li>HTML - Introducción al HTML</li>
+                    <li>HTML - Elementos</li>
+                    <li>HTML - Etiquetas</li>
+                    <li>HTML - Atributos</li>
+                    <li>HTML - Párrafo</li>
+                    <li>HTML - Títulos y encabezados</li>
+                    <li>HTML - Salto de línea</li>
+                    <li>HTML - Línea horizontal</li>
+                    <li>HTML - Listas</li>
+                    <li>HTML - Elementos de formato</li>
+                    <li>HTML - Códigos de color</li>
+                </ul>
+            </td>
+
+            <!-- Main Content (Middle Section) -->
+            <td width="60%" valign="top">
+                <h1>HTML - Tablas</h1>
+            <nav>
+                <a href="#">HTML</a> &gt; <span>Tutorial HTML - Tablas</span>
+            </nav>
+            <p>Las tablas pueden parecer difíciles al principio, pero con un poco de paciencia y práctica verás que las cosas no son como parecen. 
+                La etiqueta <code>&lt;table&gt;</code> se usa para abrir una tabla. Dentro de esta etiqueta encontraremos otras dos etiquetas típicas, 
+                <code>&lt;tr&gt;</code> (líneas de la tabla) y <code>&lt;td&gt;</code> (columnas de la tabla). Pero la mejor explicación es siempre un ejemplo:</p>
+                <table width="100%" cellspacing="0" cellpadding="10">
+                    <tr bgcolor="#e67e22">
+                        <td><b><font color="white">HTML</font></b></td>
+                    </tr>
+                    <tr bgcolor="#2c3e50">
+                        <td>
+                            <pre>
+<font color="#f1c40f">&lt;table border="1"&gt;</font>
+<font color="#f1c40f">    &lt;tr&gt;</font>
+<font color="#f1c40f">        &lt;td&gt;</font><font color="white">Fila 1 Celda 1</font><font color="#f1c40f">&lt;/td&gt;</font>
+<font color="#f1c40f">        &lt;td&gt;</font><font color="white">Fila 1 Celda 2</font><font color="#f1c40f">&lt;/td&gt;</font>
+<font color="#f1c40f">    &lt;/tr&gt;</font>
+<font color="#f1c40f">    &lt;tr&gt;</font>
+<font color="#f1c40f">        &lt;td&gt;</font><font color="white">Fila 2 Celda 1</font><font color="#f1c40f">&lt;/td&gt;</font>
+<font color="#f1c40f">        &lt;td&gt;</font><font color="white">Fila 2 Celda 2</font><font color="#f1c40f">&lt;/td&gt;</font>
+<font color="#f1c40f">    &lt;/tr&gt;</font>
+<font color="#f1c40f">&lt;/table&gt;</font>
+                            </pre>
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+            <p>Demo</p>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <table border="1" cellspacing="0" cellpadding="5">
+                            <tr>
+                                <td>Fila 1 Celda 1</td>
+                                <td>Fila 1 Celda 2</td>
+                            </tr>
+                            <tr>
+                                <td>Fila 2 Celda 1</td>
+                                <td>Fila 2 Celda 2</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <p>El contenido será ubicado dentro de las filas de la tabla. Una fila representa lo que está entre &lt;td&gt; y &lt;/td&gt;. El atributo border establece el ancho del borde la de tabla.</p>
+            <h2>HTML - Tablas asimétricas</h2>
+            <hr>
+            <p>Para formar tablas asimétricas usaremos 'rospawn' para unir más de una linea y 'colspan' para unir más de una columna. Ademas, si queremos que la primera linea sirva como linea de título para las columnas usaremos la etiqueta &lt;th&gt;. Estas serán escritas con letras en negrilla como veremos en el siguiente ejemplo:</p>            
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="#f1c40f">&lt;table border="1"&gt;</font>
+<font color="#f1c40f">    &lt;tr&gt;</font>
+<font color="#f1c40f">        &lt;th&gt;</font><font color="white">Column 1</font><font color="#f1c40f">&lt;/th&gt;</font>
+<font color="#f1c40f">        &lt;th&gt;</font><font color="white">Column 2</font><font color="#f1c40f">&lt;/th&gt;</font>
+<font color="#f1c40f">        &lt;th&gt;</font><font color="white">Column 3</font><font color="#f1c40f">&lt;/th&gt;</font>
+<font color="#f1c40f">    &lt;/tr&gt;</font>
+<font color="#f1c40f">    &lt;tr&gt;</font>
+<font color="#f1c40f">        &lt;td rowspan="2"&gt;</font><font color="white">Fila 1 Celda 1</font><font color="#f1c40f">&lt;/td&gt;</font>
+<font color="#f1c40f">        &lt;td&gt;</font><font color="white">Row 1 Cell 2</font><font color="#f1c40f">&lt;/td&gt;</font>
+<font color="#f1c40f">        &lt;td&gt;</font><font color="white">Fila 1 Celda 3</font><font color="#f1c40f">&lt;/td&gt;</font>
+<font color="#f1c40f">    &lt;/tr&gt;</font>
+<font color="#f1c40f">    &lt;tr&gt;</font>
+<font color="#f1c40f">        &lt;td&gt;</font><font color="white">Row 2 Cell 2</font><font color="#f1c40f">&lt;/td&gt;</font>
+<font color="#f1c40f">        &lt;td&gt;</font><font color="white">Linea 2 Celda 3</font><font color="#f1c40f">&lt;/td&gt;</font>
+<font color="#f1c40f">    &lt;/tr&gt;</font>
+<font color="#f1c40f">    &lt;tr&gt;</font>
+<font color="#f1c40f">        &lt;td colspan="3"&gt;</font><font color="white">Linea 3 Celda 1</font><font color="#f1c40f">&lt;/td&gt;</font>
+<font color="#f1c40f">    &lt;/tr&gt;</font>
+<font color="#f1c40f">&lt;/table&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <table border="1" cellspacing="0" cellpadding="5">
+                            <tr>
+                                <th>Column 1</th>
+                                <th>Column 2</th>
+                                <th>Column 3</th>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Fila 1 Celda 1</td>
+                                <td>Row 1 Cell 2</td>
+                                <td>Fila 1 Celda 3</td>
+                            </tr>
+                            <tr>
+                                <td>Row 2 Cell 2</td>
+                                <td>Linea 2 Celda 3</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">Linea 3 Celda 1</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <h2>HTML - Espacio entre las celdas</h2>
+            <hr>
+            <p>Con la ayuda de los atributos 'cellpadding' y 'cellspacing' podemos establecer la distancia entre la celdas. <strong><em>cellspacing</em></strong> determina el tamaño del borde, y <strong><em>cellspadding</em></strong> la distancia entre el marco y el contenido. En el siguiente ejemplo hemos añadido también poco de color.</p>                
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="#f1c40f">&lt;table border="1" cellspacing="10" bgcolor="rgb(0,255,0)"&gt;</font>
+<font color="#f1c40f">    &lt;tr&gt;</font>
+<font color="#f1c40f">        &lt;th&gt;</font><font color="white">Column 1</font><font color="#f1c40f">&lt;/th&gt;</font>
+<font color="#f1c40f">        &lt;th&gt;</font><font color="white">Column 2</font><font color="#f1c40f">&lt;/th&gt;</font>
+<font color="#f1c40f">    &lt;/tr&gt;</font>
+<font color="#f1c40f">    &lt;tr&gt;</font>
+<font color="#f1c40f">        &lt;td&gt;</font><font color="white">Fila 1 Celda 1</font><font color="#f1c40f">&lt;/td&gt;</font>
+<font color="#f1c40f">        &lt;td&gt;</font><font color="white">Fila 1 Celda 2</font><font color="#f1c40f">&lt;/td&gt;</font>
+<font color="#f1c40f">    &lt;/tr&gt;</font>
+<font color="#f1c40f">    &lt;tr&gt;</font>
+<font color="#f1c40f">        &lt;td&gt;</font><font color="white">Fila 2 Celda 1</font><font color="#f1c40f">&lt;/td&gt;</font>
+<font color="#f1c40f">        &lt;td&gt;</font><font color="white">Fila 2 Celda 2</font><font color="#f1c40f">&lt;/td&gt;</font>
+<font color="#f1c40f">    &lt;/tr&gt;</font>
+<font color="#f1c40f">&lt;/table&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <p>Para mostrar mejor la diferencia puedes borrar el borde del ejemplo anterior.</p>
+            <p>La distancia entre las celdas y el borde será interpretado en pixeles por el navegador. Sabiendo esto, un valor de 10 significa en realidad 10 pixeles. Este atributo no es el único que usa como unidad de medida los pixeles, pero aprenderemos sobre los demás a medida que avancemos en los siguientes tutoriales.</p>
+            <hr>
+        </td>
+            <!-- Right Sidebar -->
+            <td width="20%" valign="top">
+                <h3>Referencias</h3>
+                <ul>
+                    <li><a href="#">Tabla de colores en HTML</a></li>
+                    <li><a href="#">Tabla de símbolos en HTML</a></li>
+                </ul>
+
+                <h3>Extras</h3>
+                <ul>
+                    <li><a href="#">La etiqueta marquee ¿cómo podemos usarla?</a></li>
+                </ul>
+
+                <h3>More CSS Tutorials</h3>
+                <ul>
+                    <li><a href="#">CSS Basics</a></li>
+                    <li><a href="#">CSS Colors and Backgrounds</a></li>
+                    <li><a href="#">CSS Flexbox Layout Model</a></li>
+                    <li><a href="#">CSS Transformations: 2D and 3D Effects</a></li>
+                    <li><a href="#">CSS Web Page from Scratch</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
