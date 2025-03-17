@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML - Campos escondidos</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML - Campos-escondidos</title>
+    </head>
+
+    <body>
+
+        <h1>HTML - Campos-escondidos</h1>
+
+        <p>Los campos escondidos no serán mostrados por el navegador. Estos son necesarios cuando tenemos que tratar con
+            formularios y bases de datos en MySQL, pero no se limita a eso. Utilizaremos los campos escondidos para
+            enviar información adicional a la base de datos, además de la información enviada por el usuario.</p>
+
+        <table width="100%" cellspacing="0" cellpadding="10">
+            <tr bgcolor="#e67e22">
+                <td><b>
+                        <font color="white">HTML</font>
+                    </b></td>
+            </tr>
+            <tr bgcolor="#2c3e50">
+                <td>
+                    <pre>
+<font color="#f1c40f">&lt;input</font> <font color="white">type</font>=<font color="#f1c40f">"hidden"</font> <font color="white">/</font><font color="#f1c40f">&gt;</font>
+                </pre>
+                </td>
+            </tr>
+        </table>
+
+        <p>Este fragmento de un código no mostrará nada porque el navegador lo trata como información que no debe ser
+            mostrada.</p>
+
+        <h3>HTML - Otros atributos</h3>
+
+        <p>Utilizaremos los atributos <em><strong>name</strong></em> para establecer un nombre a nuestro campo
+            escondido. Podemos usar el atributo id por si necesitamos referenciar el campo desde un lenguaje como
+            Javascript.</p>
+
+        <table width="100%" cellspacing="0" cellpadding="10">
+            <tr bgcolor="#e67e22">
+                <td><b>
+                        <font color="white">HTML</font>
+                    </b></td>
+            </tr>
+            <tr bgcolor="#2c3e50">
+                <td>
+                    <pre>
+<font color="#f1c40f">&lt;input</font> <font color="white">type</font>=<font color="#f1c40f">"hidden"</font> <font color="white">id</font>=<font color="#f1c40f">"age"</font> <font color="white">name</font>=<font color="#f1c40f">"age"</font> <font color="white">value</font>=<font color="#f1c40f">"25"</font> <font color="white">/</font><font color="#f1c40f">&gt;</font>
+
+<font color="#f1c40f">&lt;input</font> <font color="white">type</font>=<font color="#f1c40f">"hidden"</font> <font color="white">id</font>=<font color="#f1c40f">"DOB"</font> <font color="white">name</font>=<font color="#f1c40f">"DOB"</font> <font color="white">value</font>=<font color="#f1c40f">"01/01/70"</font> <font color="white">/</font><font color="#f1c40f">&gt;</font>
+
+<font color="#f1c40f">&lt;input</font> <font color="white">type</font>=<font color="#f1c40f">"hidden"</font> <font color="white">id</font>=<font color="#f1c40f">"admin"</font> <font color="white">name</font>=<font color="#f1c40f">"admin"</font> <font color="white">value</font>=<font color="#f1c40f">"1"</font> <font color="white">/</font><font color="#f1c40f">&gt;</font>
+                </pre>
+                </td>
+            </tr>
+        </table>
+
+        <p>Arriba mostramos los ejemplos de tres modelos de campos escondidos que pueden ser usados especialmente si
+            tienes una página web donde el usuario tiene que hacer login para acceder a determinada información. El
+            campo de 'admin' es utilizado para ver el rango de alguien, 1 siendo administrador, y 0 no-administrador.
+        </p>
+
+        <p>Los <em><strong>'Hidden fields'</strong></em> son usados cuando tenemos que tratar con información que
+            queremos dejar en más de un formulario, para así no obligar al usuario a insertar la información varias
+            veces.</p>
+
+    </body>
+    </html>
+</body>
+
+</html>

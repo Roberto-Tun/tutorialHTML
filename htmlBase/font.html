@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Font y basefont</title>
+</head>
+
+<body>
+    <h1>HTML - Font y basefont</h1>
+    <nav>
+        <a href="#">HTML</a> &gt; <span>Tutorial HTML - Font y basefont</span>
+    </nav>
+    <p>La etiqueta &lt;font&gt; es usada para modificar el tamaño el color y la fuente del texto. Utiliza los atributos
+        "size", "color" y "face" para personalizar tu texto y la etiqueta &lt;basefont&gt; para establecer el color,
+        tamaño y estilo de todo un texto.</p>
+    <p>Las etiquetas <i>font</i> y <i>"basefont"</i> no son utilizadas últimamente, ya que se usa CSS para establecer el
+        estilo de texto, obteniéndose un resultado idéntico.</p>
+    <h2>El tamaño de la fuente</h2>
+    <hr>
+    <p>Para establecer el tamaño de la fuente, usamos el atributo size. Se aceptan valores entre 1 (el más pequeño) y 7
+        (el más grande). El valor estándar de un texto es 3.</p>
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;p&gt;&lt;font size="5"&gt;</font><font color="white">Este es el tamaño de fuente 5</font><font color="#f1c40f">&lt;/font&gt;&lt;/p&gt;</font>
+                        </pre>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+    <h3>Demo</h3>
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <p>
+                    <font size="5">Este es el tamaño de fuente 5</font>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <h3>El color de la fuente</h3>
+    <hr>
+    <p>Para establecer el color del texto, usaremos simplemente color</p>
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;font</font> <font color="#d4d4d4">color=</font><font color="#ff8080">"#990000"</font><font color="#f1c40f">&gt;</font><font color="white">Este texto es #990000</font><font color="#f1c40f">&lt;/font&gt;</font>
+<font color="#f1c40f">&lt;br /&gt;</font>
+<font color="#f1c40f">&lt;font</font> <font color="#d4d4d4">color=</font><font color="#ff8080">"red"</font><font color="#f1c40f">&gt;</font><font color="white">Este texto es rojo</font><font color="#f1c40f">&lt;/font&gt;</font>
+                        </pre>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <h3>Demo</h3>
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <p>
+                    <font color="#990000">Este texto es #990000</font>
+                </p>
+                <p>
+                    <font color="red">Este texto es rojo</font>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <h2>Font Face</h2>
+    <hr>
+    <p>Elige un estilo de letra usando el atributo, face de la etiqueta font. Podrás escoger cualquier fuente que tengas
+        instalado, pero escoge la fuente con cuidado porque el usuario que visite tu página no podrá ver la fuente si no
+        tiene instalada tu misma fuente. Verá en cambio la fuente por defecto, que es Times New Roman. La solución será
+        escoger varias fuentes que sean parecidas.</p>
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;p&gt;</font><font color="#f1c40f">&lt;font face="Bookman Old Style, Book Antiqua, Garamond"&gt;</font><font color="white">Este párrafo ha formateado su fuente con la etiqueta font!</font><font color="#f1c40f">&lt;/font&gt;</font><font color="#f1c40f">&lt;/p&gt;</font>
+                        </pre>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <h3>Demo</h3>
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <p>
+                    <font face="Bookman Old Style, Book Antiqua, Garamond">Este párrafo ha formateado su fuente con la
+                        etiqueta font!</font>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <h2>Basefont</h2>
+    <hr>
+    <p>Con la ayuda de la etiqueta basefont puedes establecer el valor por defecto de la fuente en tu página web. Te
+        recomendamos especificar un basefont en caso de que uses la fuente en HTML. La cual está en el siguiente modelo.
+    </p>
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;html&gt;</font>
+    ......
+
+    <font color="#f1c40f">&lt;body&gt;</font>
+
+        <font color="#f1c40f">&lt;basefont</font> <font color="#d4d4d4">size=</font><font color="#ff8080">"2"</font> <font color="#d4d4d4">color=</font><font color="#ff8080">"green"</font><font color="#f1c40f">&gt;</font>
+
+        <font color="#f1c40f">&lt;p&gt;</font><font color="white">Este párrafo ha formateado su fuente con la etiqueta font!</font><font color="#f1c40f">&lt;/p&gt;</font>
+        <font color="#f1c40f">&lt;p&gt;</font><font color="white">Este párrafo ha formateado su fuente con la etiqueta font!</font><font color="#f1c40f">&lt;/p&gt;</font>
+        <font color="#f1c40f">&lt;p&gt;</font><font color="white">Este párrafo ha formateado su fuente con la etiqueta font!</font><font color="#f1c40f">&lt;/p&gt;</font>
+
+        <font color="#f1c40f">&lt;/basefont&gt;</font>
+
+    <font color="#f1c40f">&lt;/body&gt;</font>
+<font color="#f1c40f">&lt;/html&gt;</font>
+                        </pre>
+            </td>
+        </tr>
+    </table>
+    <p>Con todos estos, <em>basefont</em> obsoleto. En un futuro cercano es posible que no funcione más y que se use CSS
+        en su lugar.</p>
+    <h2>Atributos</h2>
+    <hr>
+    <table border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <th>Atributo</th>
+            <th>"Valor"</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>size=</td>
+            <td>"Num. Valor 1-7"</td>
+            <td>Tamaño de tu texto, 7 es el más grande</td>
+        </tr>
+        <tr>
+            <td>color=</td>
+            <td>"nombre, rgb o hexadecimal"</td>
+            <td>Cambia el color de la fuente</td>
+        </tr>
+        <tr>
+            <td>face=</td>
+            <td>"nombre de la fuente"</td>
+            <td>Cambia el tipo de la fuente</td>
+        </tr>
+    </table>
+    <p>Attribute= "Valor" Descripción size= "Num. Valor 1-7" Tamaño de tu texto, 7 es el más grande color= "rgb,nombre,o
+        hexadecimal" Cambia el color de la fuente face= "nombre de la fuente" Cambia el tipo de la fuente Empezar un
+        parafo "como en los libros" </p>
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;p&gt;</font><font color="white">&lt;font</font> <font color="#f1c40f">size=</font><font color="#ff8080">"7"</font> 
+<font color="#f1c40f">face=</font><font color="#ff8080">"Georgia, Arial"</font> 
+<font color="#f1c40f">color=</font><font color="#ff8080">"#990000"</font><font color="white">&gt;P</font><font color="#f1c40f">&lt;/font&gt;</font><font color="white">ersonaliza tu fuente para lograr el aspecto deseado.</font><font color="#f1c40f">&lt;/p&gt;</font>
+                        </pre>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <h3>Demo</h3>
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <p>
+                    <font size="7" face="Georgia, Arial" color="#990000">P</font>ersonaliza tu fuente para lograr el
+                    aspecto deseado.
+                </p>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <table width="100%">
+        <tr>
+            <td align="left">
+                <a href="colores.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    &#9664; <b>HTML - Codigos de color</b>
+                </a>
+            </td>
+            <td align="right">
+                <a href="links.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    <b>HTML - Enlaces e hipervinculos</b> &#9654;
+                </a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML - Texto cursiva</title>
+
+<body>
+    <h1>HTML - Texto cursiva</h1>
+    <p>Las etiquetas para poner el <strong>texto en cursiva</strong>, al igual que la etiqueta <i>italic</i>, se usa
+        para subrayar ciertos términos o palabras claves, a veces una frase entera. Aunque, no es recomendable abusar de
+        su uso del <strong><i>texto en cursiva</i></strong>.</p>
+    <p>Para crear este tipo de texto podemos usar lo siguiente:</p>
+
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <font color="#f1c40f">&lt;i&gt;Italic&lt;/i&gt;. Texto estilo cursiva!&lt;br /&gt;<br>
+                    Etiqueta &lt;em&gt;Emphasized&lt;/em&gt;. Texto resaltado, normalmente en cursiva. Dependiendo del
+                    dispositivo puede ser resaltado de otras formas!</font>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Demo</h4>
+    <div><i>Italic</i>. Texto estilo cursiva!<br />
+        Etiqueta <em>Emphasized</em>. Texto resaltado, normalmente en cursiva. Dependiendo del dispositivo puede ser
+        resaltado de otras formas!</div>
+
+    <p>Normalmente, el navegador interpretará estas etiquetas de la misma manera.</p>
+    <p>Por lo general, la más usada es <em>em</em>, dado que puede ser interpretada según las necesidades en el
+        dispositivo o aplicación donde aparece. Si se necesita simplemente un texto con estilo cursiva sin importar lo
+        demás, se puede usar CSS en lugar de la etiqueta <i>italic</i>.</p>
+
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <font color="#f1c40f">&lt;!-- Usando las etiquetas de estilo --&gt;<br>
+                    &lt;p&gt;<br>
+                    &lt;b&gt;HTML&lt;/b&gt;&lt;br /&gt;<br>
+                    &lt;i&gt;Hyper Text Markup Language&lt;/i&gt;<br>
+                    &lt;/p&gt;<br><br>
+                    &lt;!-- O usando etiquetas semánticas --&gt;<br><br>
+                    &lt;p&gt;<br>
+                    &lt;strong&gt;HTML&lt;/strong&gt;&lt;br /&gt;<br>
+                    &lt;em&gt;Hyper Text Markup Language&lt;/em&gt;<br>
+                    &lt;/p&gt;<br><br>
+                    &lt;!-- O usando CSS inline--&gt;<br><br>
+                    &lt;p&gt;<br>
+                    &lt;span style="font-weight:bold"&gt;HTML&lt;/span&gt;&lt;br /&gt;<br>
+                    &lt;span style="font-style:italic"&gt;Hyper Text Markup Language&lt;/span&gt;<br>
+                    &lt;/p&gt;</font>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Demo</h4>
+    <div>
+        <p><b>HTML</b><br /><i>Hyper Text Markup Language</i></p>
+        <p><strong>HTML</strong><br /><em>Hyper Text Markup Language</em></p>
+        <p><span style="font-weight:bold">HTML</span><br /><span style="font-style:italic">Hyper Text Markup
+                Language</span></p>
+    </div>
+
+    <p>La mayoría de las veces, negrita y cursiva se ponen dentro de otras etiquetas para obtener el formato final del
+        texto (como por ejemplo en un <em>parágrafo</em>, o <em>span</em> o <em>div</em>). Dicho esto, bajo ninguna
+        circunstancia se debe olvidar cerrar una etiqueta y además en el mismo orden de apertura.</p>
+    <p>Todas las etiquetas <b><i>deben ser cerradas</i></b>, en el mismo orden en el que <em><strong>se han
+                abierto</strong></em></p>
+    <hr>
+    <table width="100%">
+        <tr>
+            <td align="left">
+                <a href="textoNegrita.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    &#9664; <b>HTML - Texto negrita</b>
+                </a>
+            </td>
+            <td align="right">
+                <a href="etiquetaCode.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    <b>HTML - Etiqueta code</b> &#9654;
+                </a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

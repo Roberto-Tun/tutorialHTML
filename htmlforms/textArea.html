@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML - Textarea (Área de texto)</title>
+</head>
+
+<body>
+
+    <h1>HTML - Textarea (Área de texto)</h1>
+
+    <p>Las áreas de texto de esta clase son usadas para comentarios en los blogs y páginas web, o cualquier otro
+        propósito que requiera un espacio extensible para introducir texto.</p>
+
+    <p>Para crear un área de texto necesitaremos una etiqueta de abertura y de cierre como esta:</p>
+
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;textarea&gt;</font> Área de texto! <font color="#f1c40f">&lt;/textarea&gt;</font>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Demo</h4>
+    <textarea>Área de texto!</textarea>
+
+    <h3>Textarea - Áreas de texto. El <strong>tamaño</strong></h3>
+    <p>Para cambiar el tamaño estándar de un área de texto usaremos columnas y filas (<strong>cols</strong> y
+        <strong>rows</strong>). Estos atributos tendrán valores numéricos. Cuanto más grande sea el valor, más grande
+        será el área de texto.</p>
+
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;textarea cols="50" rows="2"&gt;</font> Área de texto! <font color="#f1c40f">&lt;/textarea&gt;</font>
+<font color="#f1c40f">&lt;textarea cols="40" rows="5"&gt;</font> Área de texto! <font color="#f1c40f">&lt;/textarea&gt;</font>
+<font color="#f1c40f">&lt;textarea cols="20" rows="10"&gt;</font> Área de texto! <font color="#f1c40f">&lt;/textarea&gt;</font>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Demo</h4>
+    <textarea cols="50" rows="2">Área de texto!</textarea>
+    <textarea cols="40" rows="5">Área de texto!</textarea>
+    <textarea cols="20" rows="10">Área de texto!</textarea>
+
+    <h3>Textarea - El atributo <strong>wrap</strong></h3>
+    <p>Este atributo de la etiqueta <code>&lt;textarea&gt;</code> establecerá la forma en la cual el texto reaccionará
+        cuando éste llegue al final de la línea.</p>
+    <p>Wrap tendrá uno de estos tres valores: hard, soft, off.</p>
+    <ul>
+        <li><strong>Hard</strong> - ubica un <em>enter</em> al final de cada línea y envía el texto en el mismo formato
+            en el que fue introducido.</li>
+        <li><strong>Soft</strong> - ubica un <em>enter</em> al final de cada línea, pero a diferencia de Hard, este
+            envía el texto en un formato libre.</li>
+        <li><strong>Off</strong> - este no formatea el texto de ninguna manera, deja el texto en una única línea
+            continua.</li>
+    </ul>
+
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;textarea cols="20" rows="5" wrap="hard"&gt;</font> Hard - ubica un enter al final de cada línea y envía el texto en el mismo formato en el que fue introducido. <font color="#f1c40f">&lt;/textarea&gt;</font>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Demo</h4>
+    <textarea cols="20" rows="5"
+        wrap="hard">Hard - ubica un enter al final de cada línea y envía el texto en el mismo formato en el que fue introducido.</textarea>
+
+    <h3>El atributo <strong>off</strong></h3>
+
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;textarea cols="20" rows="5" wrap="off"&gt;</font> Off - este no formatea el texto de ninguna manera, deja el texto en una única línea continua. <font color="#f1c40f">&lt;/textarea&gt;</font>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Demo</h4>
+    <textarea cols="20" rows="5"
+        wrap="off">Off - este no formatea el texto de ninguna manera, deja el texto en una única línea continua.</textarea>
+
+    <h3>Área de texto - El atributo <strong>readonly</strong></h3>
+    <p>Dependiendo del valor de este atributo, el usuario puede (o no) cambiar el contenido del área de texto. El
+        atributo readonly puede tener los valores 'yes' o 'no'.</p>
+
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;textarea cols="20" rows="5" wrap="hard" readonly="yes"&gt;</font> Como puedes ver este texto no puede ser modificado. En caso de que el valor 'no' sea elegido, se obtendrá el resultado opuesto. <font color="#f1c40f">&lt;/textarea&gt;</font>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Demo</h4>
+    <textarea cols="20" rows="5" wrap="hard"
+        readonly="yes">Como puedes ver este texto no puede ser modificado. En caso de que el valor 'no' sea elegido, se obtendrá el resultado opuesto.</textarea>
+
+    <h3>Área de texto - El atributo <strong>disabled</strong></h3>
+    <p>El atributo <em>disabled</em> no es muy diferente del <em>readonly</em>. El texto se mostrará en gris,
+        desactivando al mismo tiempo la posibilidad de modificar el texto contenido en el área de texto.</p>
+
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;textarea cols="20" rows="5" wrap="hard" disabled="yes"&gt;</font> El atributo disabled no es muy diferente del readonly. El texto se mostrará en gris, desactivando al mismo tiempo la posibilidad de modificar el texto contenido en el área de texto. <font color="#f1c40f">&lt;/textarea&gt;</font>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Demo</h4>
+    <textarea cols="20" rows="5" wrap="hard"
+        disabled="yes">El atributo disabled no es muy diferente del readonly. El texto se mostrará en gris, desactivando al mismo tiempo la posibilidad de modificar el texto contenido en el área de texto.</textarea>
+
+    <p>Tendrás que practicar un poco con estos atributos para mejorar tus habilidades. ¡Buena suerte!</p>
+
+</body>
+
+</html>

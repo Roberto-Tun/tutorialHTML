@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML - Etiqueta Input</title>
+</head>
+
+<body>
+    <h1 class="post-title">HTML - Etiqueta input</h1>
+    <div class="Trail">
+        <a href="https://tutorialehtml.com/es/" title="HOME"><span class="glyphicon glyphicon-home"></span></a>&nbsp;
+        »&nbsp;&nbsp;
+        <a href="https://tutorialehtml.com/es//">HTML</a>&nbsp; »&nbsp;&nbsp;
+        Tutorial HTML - Etiqueta input
+    </div>
+
+    <p>La etiqueta <em>input</em> no necesita una etiqueta de cierre y puede tener varios atributos, que definen el uso
+        de la misma:</p>
+    <ul>
+        <li><strong>text</strong></li>
+        <li><strong>password</strong></li>
+        <li><strong>radio</strong></li>
+        <li><strong>checkbox</strong></li>
+        <li><strong>reset</strong></li>
+        <li><strong>submit</strong></li>
+    </ul>
+
+    <h3>HTML - Campos de texto y contraseñas</h3>
+    <p>Estoy seguro que has escuchado bastante sobre ellos, a lo largo del tiempo, en Internet. En realidad los campos
+        de texto son la base de cualquier formulario.</p>
+
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;input type="text" /&gt;</font>
+<font color="#f1c40f">&lt;br /&gt;</font>
+<font color="#f1c40f">&lt;input type="password" /&gt;</font>
+            </pre>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Demo</h4>
+    <input type="text"><br>
+    <input type="password">
+    <p>Escribe algo en los campos de arriba para notar la diferencia.</p>
+
+    <h3>HTML - Checkboxes (Casillas de verificación)</h3>
+    <p>Ideal para ofrecerle al usuario la opción de seleccionar más de una respuesta.</p>
+
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;input type="checkbox" /&gt;</font> Leche
+<font color="#f1c40f">&lt;br /&gt;</font>
+<font color="#f1c40f">&lt;input type="checkbox" /&gt;</font> Agua
+<font color="#f1c40f">&lt;br /&gt;</font>
+<font color="#f1c40f">&lt;input type="checkbox" /&gt;</font> Pan
+            </pre>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Demo</h4>
+    <input type="checkbox"> Leche<br>
+    <input type="checkbox"> Agua<br>
+    <input type="checkbox"> Pan
+
+    <h2>HTML - Radio</h2>
+    <p>No me refiero a un radio de música, sino a un pequeño círculo el cual ofrece la posibilidad de escoger una única
+        respuesta para una pregunta.</p>
+
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;input type="radio" name="sexo" /&gt;</font> Mujer
+<font color="#f1c40f">&lt;br /&gt;</font>
+<font color="#f1c40f">&lt;input type="radio" name="sexo" /&gt;</font> Hombre
+            </pre>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Demo</h4>
+    <input type="radio" name="sexo"> Mujer<br>
+    <input type="radio" name="sexo"> Hombre
+
+    <h3>HTML - Botones submit</h3>
+    <p>Aquí, tendremos que darle un valor al atributo submit, este es el texto que será mostrado en el botón generado.
+        Si no se especifica ningún texto para el atributo <em>value</em> cada navegador pondrá uno por defecto.</p>
+
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;input type="submit" value="Enviar" /&gt;</font>
+<font color="#f1c40f">&lt;input type="submit" value="Siguiente paso &gt;&gt;" /&gt;</font>
+            </pre>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Demo</h4>
+    <input type="submit" value="Enviar">
+    <input type="submit" value="Siguiente paso &gt;&gt;">
+
+    <h3>HTML - Botones reset</h3>
+    <p>Aquí, como con el botón submit, tendremos que darle un valor, que será mostrado en el botón generado. Este botón
+        es extremadamente útil en caso de que el usuario complete la mayoría de los campos del formulario con
+        información incorrecta. Le dará la posibilidad de borrar todo y empezar de nuevo.</p>
+
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;input type="reset" value="Resetear formulario" /&gt;</font>
+<font color="#f1c40f">&lt;input type="reset" value="Limpiar campos" /&gt;</font>
+            </pre>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Demo</h4>
+    <input type="reset" value="Resetear formulario">
+    <input type="reset" value="Limpiar campos">
+
+    <h3>HTML Campos de texto y botones - Nota</h3>
+    <p>Debe decirse que estos botones no harán el procesamiento de los datos introducidos. Necesitarás un archivo PHP o
+        Javascript el cual ejecutará la acción deseada una vez que uno de estos botones sea presionado. En el siguiente
+        tutorial profundizaremos más sobre los atributos que se pueden usar con la etiqueta <em>input</em> y también
+        mostraremos algunas cosas que aún no hemos mencionado.</p>
+    <hr>
+    <table width="100%">
+        <tr>
+            <td align="left">
+                <a href="../styleTags/textoTachado.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    &#9664; <b>HTML - Texto tachado</b>
+                </a>
+            </td>
+            <td align="right">
+                <a href="camposTexto.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    <b>HTML - Campos de texto</b> &#9654;
+                </a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

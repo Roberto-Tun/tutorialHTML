@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Tutorial HTML - Marcos</title>
+</head>
+
+<body>
+    <h1>HTML - Marcos</h1>
+    <nav>
+        <a href="#">HTML</a> &gt; <span>Tutorial HTML - Marcos</span>
+    </nav>
+    <p>Los <em>marcos</em> o <em>frames</em> se utilizan para mostrar más de un documentos HTML en una sola ventana. Eso
+        significa que tendrá una pagina sin contenido, que tendrá la función de decir al navegador que paginas tiene que
+        mostrar. Con el uso masivo de PHP y CSS, esta técnica se esta utilizado cada vez menos.</p>
+    <h2>HTML - Marcos, uso general</h2>
+    <hr>
+    <p>Generalmente, los marcos son utilizados para visualizar un menú en una parte y el contenido en otra parte. Cuando
+        alguien hace click desde el menú, otra página se abrirá en la parte del contenido, sin cargar de nuevo toda la
+        pagina.</p>
+    <p>Vamos a ejemplificar esto usando el siguiente código:</p>
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;html&gt;</font>
+
+    <font color="#f1c40f">&lt;head&gt;&lt;/head&gt;</font>
+
+    <font color="#f1c40f">&lt;frameset</font> <font color="white">cols=</font><font color="#e74c3c">"30%,*"</font><font color="#f1c40f">&gt;</font>
+        <font color="#f1c40f">&lt;frame</font> <font color="white">src=</font><font color="#e74c3c">"menu.html"</font><font color="#f1c40f">&gt;</font>
+        <font color="#f1c40f">&lt;frame</font> <font color="white">src=</font><font color="#e74c3c">"content.html"</font><font color="#f1c40f">&gt;</font>
+    <font color="#f1c40f">&lt;/frameset&gt;</font>
+
+<font color="#f1c40f">&lt;/html&gt;</font>
+                        </pre>
+            </td>
+        </tr>
+    </table>
+    <ul>
+        <li><strong>frameset</strong> - la etiqueta que determina las características del marco. Los marcos individuales
+            serán definidos por ella.</li>
+        <li><strong>frameset cols="#%, *"</strong> - Cols establece la altura que cada marco tendrá. En el ejemplo
+            anterior establecimos que el primer marco (menú) ocupará el 30% del area mostrada, y usamos el signo " * "
+            para indicarle al buscador que el resto en el resto de la página será el contenido mostrado.</li>
+        <li><strong>frame src=""</strong> - la dirección de los archivos que será visualizada como menú y contenido.
+        </li>
+    </ul>
+
+    <h2>HTML - Marco - Añadir un baner o un título</h2>
+    <hr>
+    <p>Usa el siguiente código:</p>
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;html&gt;</font>
+
+    <font color="#f1c40f">&lt;head&gt;&lt;/head&gt;</font>
+
+    <font color="#f1c40f">&lt;frameset</font> <font color="white">rows=</font><font color="#e74c3c">"20%,*"</font><font color="#f1c40f">&gt;</font>
+        <font color="#f1c40f">&lt;frame</font> <font color="white">src=</font><font color="#e74c3c">"title.html"</font><font color="#f1c40f">&gt;</font>
+        <font color="#f1c40f">&lt;frameset</font> <font color="white">cols=</font><font color="#e74c3c">"30%,*"</font><font color="#f1c40f">&gt;</font>
+            <font color="#f1c40f">&lt;frame</font> <font color="white">src=</font><font color="#e74c3c">"menu.html"</font><font color="#f1c40f">&gt;</font>
+            <font color="#f1c40f">&lt;frame</font> <font color="white">src=</font><font color="#e74c3c">"content.html"</font><font color="#f1c40f">&gt;</font>
+        <font color="#f1c40f">&lt;/frameset&gt;</font>
+    <font color="#f1c40f">&lt;/frameset&gt;</font>
+
+<font color="#f1c40f">&lt;/html&gt;</font>
+                        </pre>
+            </td>
+        </tr>
+    </table>
+    <p><strong>frameset rows="#%, *" - </strong>"rows" determina la altura de cada marco que será visualizado. En el
+        ejemplo anterior escogimos que el primer marco sería del 20%, y el espacio sobrante será dividido entre
+        menu.html y content.html</p>
+    <h2>HTML - Marcos - Bordes y Espacios</h2>
+    <hr>
+    <p>Debes haber notado que entre los marcos hay algunas lineas grises que la mayoría de las veces no son deseadas.
+        Borrarlas es posible usando las etiquetas de frameborder y framespacing. Estos atributos serán introducidos bajo
+        la etiqueta frameset.</p>
+    <p>**Nota: Frameset y frameborder son el mismo atributo. Hay algunos buscadores que no los reconocen a ambos, tan
+        sólo a uno. Con esto queremos decir, que lo mejor sería utilizarlos ambos para mayor seguridad.</p>
+    <ul>
+        <li><strong>frameborder"#" - </strong>El valor 0 significa que no habrá ningún borde.</li>
+        <li><strong>border="#" - </strong>modifica el grosor del borde (usado antiguamente por Netscape y algunos otros)
+        </li>
+        <li><strong>framespacing="#" - </strong>modifica el grosor del borde (usado por Internet Explorer)</li>
+    </ul>
+    <p>Aquí hay un ejemplo prático:</p>
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;html&gt;</font>
+
+    <font color="#f1c40f">&lt;head&gt;&lt;/head&gt;</font>
+
+    <font color="#f1c40f">&lt;frameset</font> <font color="white">border=</font><font color="#e74c3c">"0"</font> <font color="white">frameborder=</font><font color="#e74c3c">"0"</font> <font color="white">framespacing=</font><font color="#e74c3c">"0"</font> <font color="white">rows=</font><font color="#e74c3c">"20%,*"</font><font color="#f1c40f">&gt;</font>
+        <font color="#f1c40f">&lt;frame</font> <font color="white">src=</font><font color="#e74c3c">"title.html"</font><font color="#f1c40f">&gt;</font>
+        <font color="#f1c40f">&lt;frameset</font> <font color="white">border=</font><font color="#e74c3c">"0"</font> <font color="white">frameborder=</font><font color="#e74c3c">"0"</font> <font color="white">framespacing=</font><font color="#e74c3c">"0"</font> <font color="white">cols=</font><font color="#e74c3c">"30%,*"</font><font color="#f1c40f">&gt;</font>
+            <font color="#f1c40f">&lt;frame</font> <font color="white">src=</font><font color="#e74c3c">"menu.html"</font><font color="#f1c40f">&gt;</font>
+            <font color="#f1c40f">&lt;frame</font> <font color="white">src=</font><font color="#e74c3c">"content.html"</font><font color="#f1c40f">&gt;</font>
+        <font color="#f1c40f">&lt;/frameset&gt;</font>
+    <font color="#f1c40f">&lt;/frameset&gt;</font>
+
+<font color="#f1c40f">&lt;/html&gt;</font>
+                        </pre>
+            </td>
+        </tr>
+    </table>
+    <h2>HTML - "Frame name" y "Frame target"</h2>
+    <hr>
+    <p>Para mantener el menú en su posición actual y cuando demos click en la página de contacto, por ejemplo, abrirla
+        en el lugar del contenido de la página, nombraremos cada marco y especificaremos el lugar donde se abrirá
+        utilizando la etiqueta <em>base target</em>.</p>
+    <p>Aquí está nuestro código para la página:</p>
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;html&gt;</font>
+
+    <font color="#f1c40f">&lt;head&gt;</font>
+        <font color="#f1c40f">&lt;base</font> <font color="white">target=</font><font color="#e74c3c">"content"</font><font color="#f1c40f">&gt;</font>
+    <font color="#f1c40f">&lt;/head&gt;</font>
+
+    <font color="#f1c40f">&lt;frameset</font> <font color="white">rows=</font><font color="#e74c3c">"20%,*"</font><font color="#f1c40f">&gt;</font>
+
+        <font color="#f1c40f">&lt;frame</font> <font color="white">name=</font><font color="#e74c3c">"title"</font> <font color="white">src=</font><font color="#e74c3c">"title.html"</font><font color="#f1c40f">&gt;</font>
+
+        <font color="#f1c40f">&lt;frameset</font> <font color="white">cols=</font><font color="#e74c3c">"30%,*"</font><font color="#f1c40f">&gt;</font>
+
+            <font color="#f1c40f">&lt;frame</font> <font color="white">name=</font><font color="#e74c3c">"menu"</font> <font color="white">src=</font><font color="#e74c3c">"menu.html"</font><font color="#f1c40f">&gt;</font>
+            <font color="#f1c40f">&lt;frame</font> <font color="white">name=</font><font color="#e74c3c">"content"</font> <font color="white">src=</font><font color="#e74c3c">"content.html"</font><font color="#f1c40f">&gt;</font>
+
+        <font color="#f1c40f">&lt;/frameset&gt;</font>
+    <font color="#f1c40f">&lt;/frameset&gt;</font>
+
+<font color="#f1c40f">&lt;/html&gt;</font>
+                        </pre>
+            </td>
+        </tr>
+    </table>
+    <h2>Noresize y scrolling</h2>
+    <hr>
+    <p>Puedes continuar personalizando los marcos usando el noresize y el scrolling</p>
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;html&gt;</font>
+
+    <font color="#f1c40f">&lt;head&gt;</font><font color="#f1c40f">&lt;/head&gt;</font>
+
+    <font color="#f1c40f">&lt;frameset</font> <font color="white">border=</font><font color="#e74c3c">"2"</font> <font color="white">frameborder=</font><font color="#e74c3c">"1"</font> <font color="white">framespacing=</font><font color="#e74c3c">"2"</font> <font color="white">rows=</font><font color="#e74c3c">"20%,*"</font><font color="#f1c40f">&gt;</font>
+        <font color="#f1c40f">&lt;frame</font> <font color="white">src=</font><font color="#e74c3c">"title.html"</font> <font color="white">noresize</font> <font color="white">scrolling=</font><font color="#e74c3c">"no"</font><font color="#f1c40f">&gt;</font>
+        <font color="#f1c40f">&lt;frameset</font> <font color="white">border=</font><font color="#e74c3c">"4"</font> <font color="white">frameborder=</font><font color="#e74c3c">"1"</font> <font color="white">framespacing=</font><font color="#e74c3c">"4"</font> <font color="white">cols=</font><font color="#e74c3c">"30%,*"</font><font color="#f1c40f">&gt;</font>
+            <font color="#f1c40f">&lt;frame</font> <font color="white">src=</font><font color="#e74c3c">"menu.html"</font> <font color="white">scrolling=</font><font color="#e74c3c">"auto"</font> <font color="white">noresize</font><font color="#f1c40f">&gt;</font>
+            <font color="#f1c40f">&lt;frame</font> <font color="white">src=</font><font color="#e74c3c">"content.html"</font> <font color="white">scrolling=</font><font color="#e74c3c">"yes"</font> <font color="white">noresize</font><font color="#f1c40f">&gt;</font>
+        <font color="#f1c40f">&lt;/frameset&gt;</font>
+    <font color="#f1c40f">&lt;/frameset&gt;</font>
+
+<font color="#f1c40f">&lt;/html&gt;</font>
+                        </pre>
+            </td>
+        </tr>
+    </table>
+    <ul>
+        <li><strong>no resize - </strong>no deja que el marco cambie su dimensión basándose en la pantalla del usuario.
+        </li>
+        <li><strong>scrolling="(yes/no)" - </strong>permite, o no permite, usar el desplazamiento en un marco.</li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+    <table width="100%">
+        <tr>
+            <td align="left">
+                <a href="backgroundImg.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    &#9664; <b>HTML - Imagen de fondo</b>
+                </a>
+            </td>
+            <td align="right">
+                <a href="layout.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    <b>HTML - Diseno de pagina</b> &#9654;
+                </a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

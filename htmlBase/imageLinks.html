@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Introducción al HTML</title>
+</head>
+
+<body>
+    <h1>HTML - Enlaces de imágen</h1>
+    <nav>
+        <a href="#">HTML</a> &gt; <span>Tutorial HTML - Enlaces de imágen</span>
+    </nav>
+    <p>Con la ayuda de las imágenes puedes darle un poco mas de vida y color a una página web. Transformar una imagen en
+        un link o enlace no es difícil. Solo debes introducir la URL de la imagen en la etiqueta img.</p>
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre style="white-space: normal;">
+<font color="#f1c40f">&lt;a href="http://www.tutorialehtml.com/" title="HTML link image example"&gt;
+	&lt;img alt="imagen html de ejemplo" src="/assets_tutorials/img/image.jpg" width="120" height="75" /&gt;
+    &lt;/a&gt;</font>
+                        </pre>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <h3>Demo</h3>
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td align="left">
+                <a href="http://www.tutorialehtml.com"><img src="../assets/images/imagenExample.jpg"
+                        alt="Paisaje con banco y árboles" width="120" height="75">
+                </a>
+            </td>
+        </tr>
+    </table>
+    <p>En la mayoría de los casos por defecto muchos navegadores agregan un borde a la imagen que es un link, para que
+        sea más fácil de diferenciar de una imagen normal. Por lo tanto, para que no tengas diferencias de un navegador
+        a otro, podemos definir el border de la imagen al valor que mas nos complace.</p>
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;a href="http://www.tutorialehtml.com" title="HTML link image example"&gt;</font>
+    <font color="#f1c40f">&lt;img</font>
+        <font color="#e67e22">alt=</font><font color="white">"imagen html de ejemplo"</font>
+        <font color="#e67e22">src=</font><font color="white">"/assets_tutorials/img/image.jpg"</font>
+        <font color="#e67e22">width=</font><font color="white">"120"</font>
+        <font color="#e67e22">height=</font><font color="white">"75"</font>
+        <font color="#e67e22">border=</font><font color="white">"5"</font>
+        <font color="#e67e22">style=</font><font color="white">"border:10px solid #337AB7"</font> <font color="#f1c40f">/&gt;</font>
+<font color="#f1c40f">&lt;/a&gt;</font>
+                        </pre>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <h3>Demo</h3>
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td align="left">
+                <a href="http://www.tutorialehtml.com"><img src="../assets/images/imagenExample.jpg"
+                        alt="imagen html de ejemplo" width="120" height="75" border="5"
+                        style="border:10px solid #337AB7">
+                </a>
+            </td>
+        </tr>
+    </table>
+    <p>Dado que el atributo border ya no existe en las especificaciones HTML5 hemos incluido también un regla CSS simple
+        para alcanzar un resultado similar.</p>
+    <h2>HTML - Thumbnails (Miniaturas)</h2>
+    <hr>
+    <p>Los thumbnails son versiones miniatura (menos kilobytes) de imágenes que tienen una calidad superior. Para crear
+        una miniatura, guarda la imagen en una calidad mas baja a la original. Después vincula esta pequeña imagen a la
+        imagen original de alta calidad.</p>
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;a href="/assets_tutorials/img/image.jpg" title="HTML link image thumbnail example"&gt;</font>
+    <font color="#f1c40f">&lt;img</font>
+        <font color="#e67e22">alt=</font><font color="white">"html image example"</font>
+        <font color="#e67e22">src=</font><font color="white">"/assets_tutorials/img/image.jpg"</font>
+        <font color="#e67e22">width=</font><font color="white">"66"</font>
+        <font color="#e67e22">height=</font><font color="white">"49"</font> <font color="#f1c40f">/&gt;</font>
+<font color="#f1c40f">&lt;/a&gt;</font>
+                        </pre>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <h3>Demo</h3>
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td align="left">
+                <a href="/assets_tutorials/img/image.jpg" title="HTML link image thumbnail example">
+                    <img alt="html image example" src="../assets/images/imagenExample.jpg" width="66" height="49" />
+                </a>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <table width="100%">
+        <tr>
+            <td align="left">
+                <a href="imagenes.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    &#9664; <b>HTML - Imagenes</b>
+                </a>
+            </td>
+            <td align="right">
+                <a href="forms.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    <b>HTML - Formularios</b> &#9654;
+                </a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

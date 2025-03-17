@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML - Etiquetas</title>
+</head>
+
+<body>
+
+    <h1>HTML - Etiquetas</h1>
+    <nav>
+        <a href="#">HTML</a> &gt; <span>Tutorial HTML - Etiquetas</span>
+    </nav>
+    <p>Un navegador lee absolutamente todo lo que escribes en el documento HTML. Como dije antes, las etiquetas tienen
+        tres partes, la <strong>abertura</strong>, el <strong>contenido</strong> y el <strong>cierre</strong>.</p>
+    <p>Como ya aprenderás existen cientos de etiquetas. Absolutamente todos los elementos que serán mostrados por el
+        navegador necesitan una etiqueta o dos.</p>
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <!-- Header Row -->
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <!-- Code Block Row -->
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;openingtag&gt;</font><font color="white">Contenido</font><font color="#f1c40f">&lt;/closingtag&gt;</font>
+<font color="#f1c40f">&lt;p&gt;</font> <font color="white">Párrafo</font> <font color="#f1c40f">&lt;/p&gt;</font>
+                </pre>
+            </td>
+        </tr>
+    </table>
+    <p>Las etiquetas están escritas en letras pequeñas. Este es el <strong>estándar en XHTML</strong>, y en HTML
+        dinámico.</p>
+    <p>Abajo hay algunos ejemplos sobre <strong>etiquetas en HTML:</strong></p>
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;body&gt;</font> <font color="white">actúa como una cápsula del contenido.</font>
+        
+<font color="#f1c40f">&lt;h2&gt;</font><font color="white">Título (encabezado)</font><font color="#f1c40f">&lt;/h2&gt;</font>
+    <font color="#f1c40f">&lt;p&gt;</font><font color="white">Párrafo</font><font color="#f1c40f">&lt;/p&gt;</font>
+        
+    <font color="#f1c40f">&lt;i&gt;</font><font color="white">cursiva</font><font color="#f1c40f">&lt;/i&gt;</font>
+    <font color="#f1c40f">&lt;b&gt;</font><font color="white">negrita</font><font color="#f1c40f">&lt;/b&gt;</font>
+        
+<font color="#f1c40f">&lt;/body&gt;</font>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <h3>Excepciones - etiquetas que no requieran una etiqueta de cierre</h3>
+    <hr>
+    <p>Hay algunas etiquetas que no cumplen con el modelo mostrado encima. La razón es que, de hecho, estas etiquetas no
+        tienen contenido. Debido a esto usaremos una manera distinta para escribir estas etiquetas.</p>
+    <p>El ejemplo más simple es el <em>"salto de linea"</em> (linebreak)</p>
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <font color="#f1c40f">&lt;br&gt;</font>
+            </td>
+        </tr>
+    </table>
+    <p>Esta etiqueta combina las dos etiquetas, abertura y cierre en un forma mucho mas eficiente de usar. El salto de
+        línea se utiliza para indicarle al navegador que queremos estar una línea más abajo, sin cerrar el párrafo.</p>
+    <p>Siguiendo este ejemplo, otras etiquetas han sido modificadas para escribir códigos HTML de una manera rápida y
+        sencilla.</p>
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;img</font> <font color="#f1c40f">src=</font><font color="#ff8080">"../img/image.jpg"</font> <font color="#f1c40f">/&gt;</font> <font color="white">-- Etiqueta de imagen --</font>
+        
+<font color="#f1c40f">&lt;br /&gt;</font> <font color="white">-- Etiqueta de salto de línea --</font>
+        
+<font color="#f1c40f">&lt;input</font> <font color="#f1c40f">type=</font><font color="#ff8080">"text"</font> <font color="#f1c40f">size=</font><font color="#ff8080">"12"</font> <font color="#f1c40f">/&gt;</font> <font color="white">-- Campo de entrada --</font>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <p>Como puedes ver el navegador es capaz de reproducir la imagen, siempre y cuando le proporcionemos la ubicación de
+        la misma, usando el atributo "src". Más sobre esto en el atributo ser y imágenes en general, en los siguientes
+        tutoriales.</p>
+    <hr>
+    <br>
+    <table width="100%">
+        <tr>
+            <td align="left">
+                <a href="elmentos.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    &#9664; <b>HTML - Elmentos</b>
+                </a>
+            </td>
+            <td align="right">
+                <a href="atributos.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    <b>HTML - Atributos</b> &#9654;
+                </a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

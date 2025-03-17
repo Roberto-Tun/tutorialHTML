@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Formularios</title>
+</head>
+<body>
+
+                <h1>HTML - Formularios</h1>
+                <hr>
+            <nav>
+                <a href="#">HTML</a> &gt; <span>Tutorial HTML - Formularios</span>
+            </nav>
+            <p><strong>los formularios</strong> son de las herramientas mas importantes utilizadas por un administrador web para reunir información importante sobre un usuario de Internet, información como e-mail, nombre, dirección, teléfono o cualquier otro tipo de información.</p>
+            <p>Basados en la necesidad, la información puede siempre ser almacenada en un archivo o base de datos, puedes hacer estadísticas. Puedes crear formularios de registro o suscripciones para la información presentada en tu página web, y muchas otras.</p>
+            <h2>HTML - Campos de texto</h2>
+            <hr>
+            <p>Antes de entrar en detalles, tenemos que exponer un poco lo básico de un <strong>formulario HTML</strong>. Los campos de texto poseen unos pocos atributos que han sido mencionados desde el principio:</p>
+            <ul>
+                <li><strong>type - </strong>establece el tipo del campo de texto. Por ejemplo: texto, contraseña o botón de envío..</li>
+                <li><strong>name - </strong>le da al campo de texto un nombre para poder hacer referencia a ese campo desde un lenguaje de servidor como por ejemplo PHP, se se encarga de recibir y procesar el valor del campo.</li>
+                <li><strong>size - </strong>establece el tamaño del campo. Aunque se recomienda usar CSS ello.</li>
+                <li><strong>maxlenght - </strong>el número máximo de caracteres que pueden ser introducidos.</li>
+            </ul>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre >
+<font color="yellow">&lt;form</font> <font color="lightblue">method="post"</font> <font color="lightblue">action="process.php"</font><font color="yellow">&gt;</font>
+    <font color="white">Nombre:</font> <font color="yellow">&lt;input</font> <font color="lightblue">type="text"</font> <font color="lightblue">size="10"</font> <font color="lightblue">maxlength="40"</font> <font color="lightblue">name="nombre"</font><font color="yellow">&gt;</font> <font color="yellow">&lt;br /&gt;</font>
+    <font color="white">Contraseña:</font> <font color="yellow">&lt;input</font> <font color="lightblue">type="password"</font> <font color="lightblue">size="10"</font> <font color="lightblue">maxlength="10"</font> <font color="lightblue">name="contraseña"</font><font color="yellow">&gt;</font>
+<font color="yellow">&lt;/form&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <form method="post" action="process.php">
+                            Nombre: <input type="text" size="10" maxlength="40" name="nombre"> <br />
+                            Contraseña: <input type="password" size="10" maxlength="10" name="contraseña">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+            <p>No uses este código para un formulario de login. Los datos del formulario no serán encriptados y no viajaran de manera segura.</p>
+            <h2>HTML - Formularios Email</h2>
+            <hr>
+            <p>Ahora vamos a añadir el botón de enviar. Generalmente, el botón de enviar debería ser el último y suele tener el atributo value igual a "Enviar", "Enviar formulario" o algo similar.</p>
+            <p>Tambien debemos especificar un destino para los datos ingresados en el formulario, como también el modo de trasferencia. Esto puede hacerse añadiendo los siguientes atributos:</p>
+            <ul>
+                <li><strong>method - </strong>Usaremos el método <strong><em>post</em></strong>. Este envía el formulario con la información insertada sin mostrar los detalles del usuario.</li>
+                <li><strong>action - </strong>Este se usa para especificar la URL hacia la que será enviada la información para ser procesada.</li>
+            </ul>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="yellow">&lt;form</font> <font color="lightblue">method="post"</font> <font color="lightblue">action="process.php"</font><font color="yellow">&gt;</font>
+    <font color="white">Nombre:</font> <font color="yellow">&lt;input</font> <font color="lightblue">type="text"</font> <font color="lightblue">size="10"</font> <font color="lightblue">maxlength="40"</font> <font color="lightblue">name="nombre"</font><font color="yellow">&gt;</font><font color="yellow">&lt;br /&gt;</font>
+    <font color="white">Contraseña:</font> <font color="yellow">&lt;input</font> <font color="lightblue">type="password"</font> <font color="lightblue">size="10"</font> <font color="lightblue">maxlength="10"</font> <font color="lightblue">name="contraseña"</font><font color="yellow">&gt;</font><font color="yellow">&lt;br /&gt;</font>
+
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="submit"</font> <font color="lightblue">value="Enviar formulario"</font><font color="yellow">&gt;</font>
+<font color="yellow">&lt;/form&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <form method="post" action="process.php">
+                            Nombre: <input type="text" size="10" maxlength="40" name="nombre"><br />
+                            Contraseña: <input type="password" size="10" maxlength="10" name="contraseña"><br />
+                            
+                            <input type="submit" value="Enviar formulario">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+            <p>Para procesar los datos, una ves que el formulario se ha enviado, debes saber que se necesita conocimiento de un lenguaje de servidor tipo PHP, ASP, Ruby, Python o cualquier otro.</p>
+            <h2>HTML - Botones de Radio</h2>
+            <hr>
+            <p>Los botones de radio son muy populares, útiles y fáciles de usar. El ejemplo mas usado sería una pregunta con mas de una opción de respuesta. Los atributos deben ser los siguientes:</p>
+            <ul>
+                <li><strong>value - </strong>especifica qué será enviado en caso de que el usuario selecciona ese valor concreto. Sólo se enviará un único valor.</li>
+                <li><strong>name - </strong>determina a qué grupo de botones pertenece el botón seleccionado.</li>
+            </ul>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="yellow">&lt;form</font> <font color="lightblue">method="post"</font> <font color="lightblue">action="mailto:youremail@email.com"</font><font color="yellow">&gt;</font>
+
+    <font color="white">¿Qué clase de zapatos llevas puestos ? </font><font color="yellow">&lt;br /&gt;</font>
+
+    <font color="yellow">&lt;label&gt;</font><font color="white">Color </font><font color="yellow">&lt;/label&gt;</font> <font color="yellow">&lt;br /&gt;</font>
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="radio"</font> <font color="lightblue">name="color"</font> <font color="lightblue">value="dark"</font><font color="yellow">&gt;</font><font color="white">Oscuro </font> <font color="yellow">&lt;br /&gt;</font>
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="radio"</font> <font color="lightblue">name="color"</font> <font color="lightblue">value="light"</font><font color="yellow">&gt;</font><font color="white">Claro </font> <font color="yellow">&lt;br /&gt;</font>
+
+    <font color="yellow">&lt;label&gt;</font><font color="white">Tamaño: </font><font color="yellow">&lt;/label&gt;</font> <font color="yellow">&lt;br /&gt;</font>
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="radio"</font> <font color="lightblue">name="size"</font> <font color="lightblue">value="small"</font><font color="yellow">&gt;</font><font color="white">Pequeño </font> <font color="yellow">&lt;br /&gt;</font>
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="radio"</font> <font color="lightblue">name="size"</font> <font color="lightblue">value="average"</font><font color="yellow">&gt;</font><font color="white">Mediano </font><font color="yellow">&lt;br /&gt;</font>
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="radio"</font> <font color="lightblue">name="size"</font> <font color="lightblue">value="big"</font><font color="yellow">&gt;</font><font color="white">Grande </font> <font color="yellow">&lt;br /&gt;</font>
+
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="submit"</font> <font color="lightblue">value="Enviar formulario"</font><font color="yellow">&gt;</font>
+
+<font color="yellow">&lt;/form&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <form method="post" action="mailto:youremail@email.com">
+
+                            ¿Qué clase de zapatos llevas puestos ? <br />
+                            
+                            <label>Color:</label> <br />
+                            <input type="radio" name="color" value="dark">Oscuro <br />
+                            <input type="radio" name="color" value="light">Claro <br />
+                            
+                            <label>Tamaño:</label><br />
+                            <input type="radio" name="size" value="small">Pequeño <br />
+                            <input type="radio" name="size" value="average">Mediano <br />
+                            <input type="radio" name="size" value="big">Grande <br />
+                        
+                            <input type="submit" value="Enviar formulario">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+            <p>En caso de que reemplazes la dirección email por la tuya recibirán un email con: 'size=(tamaño elegido) color=(color elegido)'.</p>
+            <h2>HTML - Checkbox (Casilla de verificación)</h2>
+            <hr>
+            <p>Usar casillas de verificación o checkbox le permite al ususario escoger una, dos o más variantes de respuesta. Los atributos name y value se usan de la misma que para los botones radio.</p>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="yellow">&lt;form</font> <font color="lightblue">method="post"</font> <font color="lightblue">action="mailto:youremail@email.com"</font><font color="yellow">&gt;</font>
+
+    <font color="yellow">&lt;p&gt;</font><font color="white">¿Cual es tu color favorito? </font><font color="yellow">&lt;/p&gt;</font>
+
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="checkbox"</font> <font color="lightblue">name="shoes"</font> <font color="lightblue">value="black"</font><font color="yellow">&gt;</font><font color="white">Negro </font><font color="yellow">&lt;br/&gt;</font>
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="checkbox"</font> <font color="lightblue">name="shoes"</font> <font color="lightblue">value="white"</font><font color="yellow">&gt;</font><font color="white">Blanco </font><font color="yellow">&lt;br/&gt;</font>
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="checkbox"</font> <font color="lightblue">name="shoes"</font> <font color="lightblue">value="gray"</font><font color="yellow">&gt;</font><font color="white">Gris </font><font color="yellow">&lt;br/&gt;</font>
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="checkbox"</font> <font color="lightblue">name="shoes"</font> <font color="lightblue">value="black&white"</font><font color="yellow">&gt;</font><font color="white">Blanco y Negro </font><font color="yellow">&lt;br/&gt;</font>
+
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="submit"</font> <font color="lightblue">value="Enviar formulario"</font><font color="yellow">&gt;</font>
+
+<font color="yellow">&lt;/form&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <form method="post" action="mailto:youremail@email.com">
+                            <p>¿Cual es tu color favorito?</p>
+                        
+                            <input type="checkbox" name="shoes" value="black">Negro <br/>
+                            <input type="checkbox" name="shoes" value="white">Blanco <br/>
+                            <input type="checkbox" name="shoes" value="gray">Gris <br/>
+                            <input type="checkbox" name="shoes" value="black&white ">Blanco y negro<br/>
+                            
+                            <input type="submit" value="Enviar formulario">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+            <h2>HTML - Otros tipos de formularios - Listas</h2>
+            <hr>
+            <p>Otro modelo de formulario es la lista como puedes ver a continuación, en el cual el usuario selecciona una opción determinada que será enviada como la opción elegida.</p>
+            <hr>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="yellow">&lt;form</font> <font color="lightblue">method="post"</font> <font color="lightblue">action="mailto:youremail@email.com"</font><font color="yellow">&gt;</font>
+
+    <font color="yellow">&lt;p&gt;</font><font color="white">Preferencias musicales</font><font color="yellow">&lt;/p&gt;</font>
+
+    <font color="yellow">&lt;select</font> <font color="lightblue">multiple</font> <font color="lightblue">name="music"</font> <font color="lightblue">size="4"</font><font color="yellow">&gt;</font>
+        <font color="yellow">&lt;option</font> <font color="lightblue">value="emo"</font> <font color="lightblue">selected</font><font color="yellow">&gt;</font><font color="white">emo</font><font color="yellow">&lt;/option&gt;</font>
+        <font color="yellow">&lt;option</font> <font color="lightblue">value="metal/rock"</font><font color="yellow">&gt;</font><font color="white">Metal/Rock</font><font color="yellow">&lt;/option&gt;</font>
+        <font color="yellow">&lt;option</font> <font color="lightblue">value="hiphop"</font><font color="yellow">&gt;</font><font color="white">Hip Hop</font><font color="yellow">&lt;/option&gt;</font>
+        <font color="yellow">&lt;option</font> <font color="lightblue">value="ska"</font><font color="yellow">&gt;</font><font color="white">Ska</font><font color="yellow">&lt;/option&gt;</font>
+        <font color="yellow">&lt;option</font> <font color="lightblue">value="jazz"</font><font color="yellow">&gt;</font><font color="white">Jazz</font><font color="yellow">&lt;/option&gt;</font>
+        <font color="yellow">&lt;option</font> <font color="lightblue">value="country"</font><font color="yellow">&gt;</font><font color="white">Country</font><font color="yellow">&lt;/option&gt;</font>
+        <font color="yellow">&lt;option</font> <font color="lightblue">value="classical"</font><font color="yellow">&gt;</font><font color="white">Classical</font><font color="yellow">&lt;/option&gt;</font>
+        <font color="yellow">&lt;option</font> <font color="lightblue">value="alternative"</font><font color="yellow">&gt;</font><font color="white">Alternative</font><font color="yellow">&lt;/option&gt;</font>
+        <font color="yellow">&lt;option</font> <font color="lightblue">value="oldies"</font><font color="yellow">&gt;</font><font color="white">Oldies</font><font color="yellow">&lt;/option&gt;</font>
+        <font color="yellow">&lt;option</font> <font color="lightblue">value="techno"</font><font color="yellow">&gt;</font><font color="white">Techno</font><font color="yellow">&lt;/option&gt;</font>
+    <font color="yellow">&lt;/select&gt;</font> <font color="yellow">&lt;br /&gt;</font>
+
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="submit"</font> <font color="lightblue">value="Enviar formulario"</font><font color="yellow">&gt;</font>
+
+<font color="yellow">&lt;/form&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <form method="post" action="mailto:youremail@email.com">
+                            <p>Preferencias musicales</p>
+                            
+                            <select multiple name="music" size="4">
+                                <option value="emo" selected>Emo</option>
+                                <option value="metal/rock" >Metal/Rock</option>
+                                <option value="hiphop" >Hip Hop</option>
+                                <option value="ska" >Ska</option>
+                                <option value="jazz" >Jazz</option>
+                                <option value="country" >Country</option>
+                                <option value="classical" >Classical</option>
+                                <option value="alternative" >Alternative</option>
+                                <option value="oldies" >Oldies</option>
+                                <option value="techno" >Techno</option>
+                            </select> <br />
+                            
+                            <input type="submit" value="Enviar formulario">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+            <p>Otro modelo de formulario es el menú 'drop-down'. Este se visualiza como un campo, el cual mostrará una lista cuando se hace click sobre el.</p>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="yellow">&lt;form</font> <font color="lightblue">method="post"</font> <font color="lightblue">action="mailto:youremail@email.com"</font><font color="yellow">&gt;</font>
+
+    <font color="yellow">&lt;p&gt;</font><font color="white">¿Nivel de educación?</font><font color="yellow">&lt;/p&gt;</font>
+
+    <font color="yellow">&lt;select</font> <font color="lightblue">name="education"</font><font color="yellow">&gt;</font>
+        <font color="yellow">&lt;option&gt;</font><font color="white">Elegir</font><font color="yellow">&lt;/option&gt;</font>
+        <font color="yellow">&lt;option&gt;</font><font color="white">Secundaria</font><font color="yellow">&lt;/option&gt;</font>
+        <font color="yellow">&lt;option&gt;</font><font color="white">Universitaria</font><font color="yellow">&lt;/option&gt;</font>
+        <font color="yellow">&lt;option&gt;</font><font color="white">Doctorado</font><font color="yellow">&lt;/option&gt;</font>
+    <font color="yellow">&lt;/select&gt;</font> <font color="yellow">&lt;br /&gt;</font>
+
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="submit"</font> <font color="lightblue">value="Enviar formulario"</font><font color="yellow">&gt;</font>
+
+<font color="yellow">&lt;/form&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <form method="post" action="mailto:youremail@email.com">
+                            <p>¿Nivel de educación?</p>
+                        
+                            <select name="education">
+                                <option>Elegir</option>
+                                <option>Secundaria </option>
+                                <option>Universitaria</option>
+                                <option>Doctorado</option>
+                            </select> <br />
+                            
+                            <input type="submit" value="Enviar formulario">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+            <h2>HTML - formulario Upload</h2>
+            <hr>
+            <p>Ante todo hay que decir que este formulario es sólo la interfaz, la parte visible con la cual el usuario estará interactuando. Para hacer un formulario de upload completo, son necesarios conocimientos y habilidades en PHP, ASP o cualquier otro lenguaje de servidor.</p>
+            <p>Un formulario Upload se compone de muchas partes. Comenzaremos por establecer el tamaño del archivo que deseamos subir. Esto se hace usando un campo oculto. Después de eso, crearemos el campo en el cual el usuario estará en capacidad de escribir la dirección del archivo o podrá buscarla desde una ventana de "explore".</p>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="yellow">&lt;input</font> <font color="lightblue">type="hidden"</font> <font color="lightblue">name="MAX_FILE_SIZE"</font> <font color="lightblue">value="100"</font> <font color="yellow">/&gt;</font>
+<font color="yellow">&lt;input</font> <font color="lightblue">name="file"</font> <font color="lightblue">type="file"</font> <font color="yellow">/&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <input type="hidden" name="MAX_FILE_SIZE" value="100" />
+                        <input name="file" type="file" />
+                    </td>
+                </tr>
+            </table>
+            <h2>HTML - Textarea, comentarios y campos de mensaje</h2>
+            <hr>
+            <p>Generalmente, las zonas de texto se usan para enviar comentarios. Blogs y foros son las principales páginas web que están usando esta clase de opciones. No obstante, hay varias páginas que están usando estas zonas de texto para descubrir la opinión de sus usuarios sobre tu tema especifico.</p>
+            <p>Para crear una zona de texto primero especificaremos los atributos de las filas y las columnas dentro de la etiqueta &lt;textarea&gt;. 'Rows' establecerá la altura del campo, y 'cols' el ancho del mismo. En el siguiente ejemplo hay 5 lineas de 20 caracteres cada una. Ademas, debemos especificar los atributos de la etiqueta <strong>wrap</strong>, estos son:</p>
+            <span><strong>wrap=</strong></span>
+            <ol>
+                <li>"off"</li>
+                <li>"virtual"</li>
+                <li>"physical"</li>
+            </ol>
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tr bgcolor="#e67e22">
+                    <td><b><font color="white">HTML</font></b></td>
+                </tr>
+                <tr bgcolor="#2c3e50">
+                    <td>
+                        <pre>
+<font color="yellow">&lt;form</font> <font color="lightblue">method="post"</font> <font color="lightblue">action="mailto:youremail@email.com"</font><font color="yellow">&gt;</font>
+
+    <font color="yellow">&lt;textarea</font> <font color="lightblue">rows="5"</font> <font color="lightblue">cols="20"</font> <font color="lightblue">wrap="physical"</font> <font color="lightblue">name="comments"</font><font color="yellow">&gt;</font><font color="white">Escribe un comentario</font><font color="yellow">&lt;/textarea&gt;</font><font color="yellow">&lt;br /&gt;</font>
+
+    <font color="yellow">&lt;input</font> <font color="lightblue">type="submit"</font> <font color="lightblue">value="Enviar formulario"</font><font color="yellow">&gt;</font>
+
+<font color="yellow">&lt;/form&gt;</font>
+                        </pre>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <h3>Demo</h3>
+            <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+                <tr>
+                    <td>
+                        <form method="post" action="mailto:youremail@email.com">
+
+                            <textarea rows="5" cols="20" wrap="physical" name="comments">Escribe un comentario</textarea><br />
+                            <input type="submit" value="Enviar formulario">
+                        
+                        </form>
+                    </td>
+                </tr>
+            </table>
+            <p>Además, debo mencionar que cada cosa que escribas será mostrada dentro de la zona de texto.</p>
+            <hr>
+            <br>
+            <table width="100%">
+                <tr>
+                    <td align="left">
+                        <a href="imageLinks.html" bgcolor="#337ab7" style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                            &#9664; <b>HTML - Enlaces de imagen</b>
+                        </a>
+                    </td>
+                    <td align="right">
+                        <a href="tablas.html" bgcolor="#337ab7" style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                            <b>HTML - Tablas</b> &#9654;
+                        </a>
+                    </td>
+                </tr>
+            </table>
+</body>
+</html>

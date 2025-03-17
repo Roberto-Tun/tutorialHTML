@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML - Botones de radio</title>
+</head>
+
+<body>
+    <h1>HTML - Botones de radio</h1>
+
+    <p>Los botones de radio se usan para permitirle al usuario elegir una de las opciones listadas. Para poder crear
+        este tipo de campo, primero debemos darle un nombre que se usara para todo el grupo.</p>
+
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;p&gt;</font>
+<font color="white">Elegir nacionalidad</font>
+<font color="#f1c40f">&lt;/p&gt;</font>
+<font color="#f1c40f">&lt;p&gt;</font>
+    <font color="white">Española: </font><font color="#f1c40f">&lt;input type="radio" name="citizenship" /&gt;</font><br>
+    <font color="white">Rumana: </font><font color="#f1c40f">&lt;input type="radio" name="citizenship" /&gt;</font><br>
+    <font color="white">Inglesa: </font><font color="#f1c40f">&lt;input type="radio" name="citizenship" /&gt;</font>
+<font color="#f1c40f">&lt;/p&gt;</font>
+            </pre>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Demo</h4>
+    <p>Elegir nacionalidad</p>
+    <p>Española: <input type="radio" name="citizenship"><br> Rumana: <input type="radio" name="citizenship"><br>
+        Inglesa: <input type="radio" name="citizenship"></p>
+
+    <p>Especificando un nombre para el grupo, al cual pertenece el campo, permitirá mostrar al navegador cómo
+        diferenciar entre más de un grupo de botones radio dentro del mismo formulario, por lo tanto permitirá la
+        elección de una única variante de respuesta para cada grupo y formulario.</p>
+
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+<font color="#f1c40f">&lt;p&gt;</font>
+<font color="white">Escoger nacionalidad</font>
+<font color="#f1c40f">&lt;/p&gt;</font>
+<font color="#f1c40f">&lt;p&gt;</font>
+    <font color="white">Inglesa: </font><font color="#f1c40f">&lt;input type="radio" name="citizenship" /&gt;</font><br>
+    <font color="white">Española: </font><font color="#f1c40f">&lt;input type="radio" name="citizenship" /&gt;</font><br>
+    <font color="white">Rumana: </font><font color="#f1c40f">&lt;input type="radio" name="citizenship" /&gt;</font>
+<font color="#f1c40f">&lt;/p&gt;</font>
+<font color="#f1c40f">&lt;p&gt;</font>
+<font color="white">Escoger genéro</font>
+<font color="#f1c40f">&lt;/p&gt;</font>
+<font color="#f1c40f">&lt;p&gt;</font>
+    <font color="white">Femenino: </font><font color="#f1c40f">&lt;input type="radio" name="sex" /&gt;</font><br>
+    <font color="white">Masculino: </font><font color="#f1c40f">&lt;input type="radio" name="sex" /&gt;</font>
+<font color="#f1c40f">&lt;/p&gt;</font>
+            </pre>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Demo</h4>
+    <p>Escoger nacionalidad</p>
+    <p>Inglesa: <input type="radio" name="citizenship"><br> Española: <input type="radio" name="citizenship"><br>
+        Rumana: <input type="radio" name="citizenship"></p>
+
+    <p>Escoger genéro</p>
+    <p>Femenino: <input type="radio" name="sex"><br> Masculino: <input type="radio" name="sex"></p>
+
+    <h3>HTML - Botones de radio seleccionados <em>por defecto</em></h3>
+    <p>Al igual que las casillas de verificación, los <strong><em>botones radio</em></strong> pueden ser seleccionados
+        para facilitar el trabajo del usuario.</p>
+
+    <p>Elegir nacionalidad</p>
+    <p>Inglesa: <input type="radio" name="citizenship"><br> Rumana: <input type="radio" name="citizenship"><br>
+        Española: <input type="radio" name="citizenship" checked="yes"></p>
+
+    <p>Cualquiera de estas opciones puede ser seleccionada, no necesariamente la ultima. Además, es bueno preseleccionar
+        determinadas respuestas con moderación y sólo cuando la información requerida no es de mayor importancia. Es
+        posible que el usuario, sin prestar atención o por comodidad, elija la opción que ya ha sido seleccionada sin
+        que esta sea la correcta para él en este caso.</p>
+
+</body>
+
+</html>

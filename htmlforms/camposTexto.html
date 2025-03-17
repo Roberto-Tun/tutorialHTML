@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML - Campos de texto</title>
+</head>
+
+<body>
+    <h1>HTML - Campos de texto</h1>
+
+    <div class="Trail">
+        <a href="https://tutorialehtml.com/es/" title="HOME"><span class="glyphicon glyphicon-home"></span></a>&nbsp;
+        »&nbsp;&nbsp;
+        <a href="https://tutorialehtml.com/es//">HTML</a>&nbsp; »&nbsp;&nbsp;
+        Tutorial HTML - Campos de texto
+    </div>
+
+    <p>Los campos de texto se encuentran en los formularios. Estos, son procesados con la ayuda de un lenguaje de
+        programación, la mayoría de las veces ASP, PERL o PHP.</p>
+    <p>Atributos adicionales que son utilizados para crear los campos de texto son:</p>
+    <ul>
+        <li><strong>size</strong></li>
+        <li><strong>value</strong></li>
+        <li><strong>maxlength</strong></li>
+    </ul>
+    <p>Daremos un ejemplo de cada uno de ellos:</p>
+
+    <h3>HTML - El tamaño o el ancho del campo de texto</h3>
+    <p>El atributo <strong><em>size</em></strong> establece la longitud del campo de texto. La longitud estándar de un
+        campo de texto está por lo general entre los 20-25 caracteres. Pero esto puede variar dependiendo del propósito
+        del formulario o del campo de texto en sí.</p>
+
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+&lt;input type="text" size="5" /&gt;
+&lt;br /&gt;
+&lt;input type="text" size="15" /&gt;
+&lt;br /&gt;
+&lt;input type="text" size="25" /&gt;
+            </pre>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Demo</h4>
+    <input type="text" size="5"><br>
+    <input type="text" size="15"><br>
+    <input type="text" size="25">
+
+    <h3>HTML - Otro atributo es el value (valor)</h3>
+    <p>Usando este atributo podremos asignar un valor por defecto a nuestros campos, información que el usuario puede
+        dejar o borrar. Esta aplicación es bastante útil, especialmente cuando un script PHP está integrado para
+        reconocer un visitante y mantiene las opciones elegidas por el usuario.</p>
+
+    <table width="100%" cellspacing="0" cellpadding="10">
+        <tr bgcolor="#e67e22">
+            <td><b>
+                    <font color="white">HTML</font>
+                </b></td>
+        </tr>
+        <tr bgcolor="#2c3e50">
+            <td>
+                <pre>
+&lt;input type="text" size="5" value="12345" /&gt;
+&lt;br /&gt;
+&lt;input type="text" size="15" value="HTML text field" /&gt;
+&lt;br /&gt;
+&lt;input type="text" size="25" value="HTML Tutorials" /&gt;
+            </pre>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Demo</h4>
+    <input type="text" size="5" value="12345"><br>
+    <input type="text" size="15" value="HTML text field"><br>
+    <input type="text" size="25" value="HTML Tutorials">
+
+    <h3>HTML - Maxlength</h3>
+    <p>Maxlength es uno de los atributos más útiles para los campos de texto, ya que este no le permite al usuario
+        teclear un número de caracteres mayor al permitido.</p>
+    <input type="text" size="5" maxlength="5"><br>
+    <input type="text" size="15" maxlength="15"><br>
+    <input type="text" size="25" maxlength="25">
+    <p>En caso de que quieras introducir más de 5, 15 y 25 caracteres en los campos de arriba, esto no será posible
+        debido a la restricción aplicada por 'maxlength'.</p>
+
+    <hr>
+
+    <h3>Enlaces a otros tutoriales</h3>
+
+    <a href="https://tutorialehtml.com/es/tutoriales-html-input/">HTML - Etiqueta input</a>
+    <br>
+    <a href="https://tutorialehtml.com/es/tutoriales-html-password-contrasena/">HTML - Campo contraseña</a>
+
+</body>
+
+</html>
