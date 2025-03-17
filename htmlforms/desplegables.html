@@ -7,6 +7,7 @@
 <body>
 
     <h1>HTML - Desplegables</h1>
+    <hr>
 
     <p>Las listas <strong>drop down</strong> (listas desplegables) son uno de los tipos de listas más prácticas. Probablemente las hayas visto muchas veces en Internet, pero sin saber que tenían ese nombre.</p>
 
@@ -19,9 +20,9 @@
                 <pre>
 <font color="#f1c40f">&lt;select&gt;</font>
 
-    <font color="#f1c40f">&lt;option&gt;</font>New York <font color="#f1c40f">&lt;/option&gt;</font>
-    <font color="#f1c40f">&lt;option&gt;</font>Bucarest<font color="#f1c40f">&lt;/option&gt;</font>
-    <font color="#f1c40f">&lt;option&gt;</font>Madrid<font color="#f1c40f">&lt;/option&gt;</font>
+    <font color="#f1c40f">&lt;option&gt;</font><font color="white">New York</font><font color="#f1c40f">&lt;/option&gt;</font>
+    <font color="#f1c40f">&lt;option&gt;</font><font color="white">Bucharest</font><font color="#f1c40f">&lt;/option&gt;</font>
+    <font color="#f1c40f">&lt;option&gt;</font><font color="white">Madrid</font><font color="#f1c40f">&lt;/option&gt;</font>
 
 <font color="#f1c40f">&lt;/select&gt;</font>
                 </pre>
@@ -30,11 +31,18 @@
     </table>
 
     <h4>Demo</h4>
-    <select>
-        <option>New York</option>
-        <option>Bucarest</option>
-        <option>Madrid</option>
-    </select>
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <select>
+                    <option>New York</option>
+                    <option>Bucarest</option>
+                    <option>Madrid</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    
 
     <p>El navegador mostrará automáticamente la primera opción. Pero, esto puede cambiarse con la ayuda del atributo "<strong>selected</strong>".</p>
 
@@ -47,9 +55,9 @@
                 <pre>
 <font color="#f1c40f">&lt;select name="my_html_select_box"&gt;</font>
 
-    <font color="#f1c40f">&lt;option&gt;</font>New York <font color="#f1c40f">&lt;/option&gt;</font>
-    <font color="#f1c40f">&lt;option selected="yes"&gt;</font>Bucharest<font color="#f1c40f">&lt;/option&gt;</font>
-    <font color="#f1c40f">&lt;option&gt;</font>Madrid<font color="#f1c40f">&lt;/option&gt;</font>
+    <font color="#f1c40f">&lt;option&gt;</font><font color="white">New York</font><font color="#f1c40f">&lt;/option&gt;</font>
+    <font color="#f1c40f">&lt;option selected="yes"&gt;</font><font color="white">Bucharest</font><font color="#f1c40f">&lt;/option&gt;</font>
+    <font color="#f1c40f">&lt;option&gt;</font><font color="white">Madrid</font><font color="#f1c40f">&lt;/option&gt;</font>
 
 <font color="#f1c40f">&lt;/select&gt;</font>
                 </pre>
@@ -58,13 +66,20 @@
     </table>
 
     <h4>Demo</h4>
-    <select name="my_html_select_box">
-        <option>New York</option>
-        <option selected="yes">Bucharest</option>
-        <option>Madrid</option>
-    </select>
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <select name="my_html_select_box">
+                    <option>New York</option>
+                    <option selected="yes">Bucharest</option>
+                    <option>Madrid</option>
+                </select>
+            </td>
+        </tr>
+    </table>
 
     <h3>HTML - Formularios de selección</h3>
+    <hr>
     <p>Utilizaremos el atributo <strong>size</strong> para cambiar la altura de una lista <em>drop down</em> en un formulario de selección.</p>
 
     <table width="100%" cellspacing="0" cellpadding="10">
@@ -72,13 +87,13 @@
             <td><b><font color="white">HTML</font></b></td>
         </tr>
         <tr bgcolor="#2c3e50">
-            <td>
-                <pre>
+            <td >
+                <pre >
 <font color="#f1c40f">&lt;select name="my_html_select_box" size="3"&gt;</font>
 
-    <font color="#f1c40f">&lt;option&gt;</font>New York <font color="#f1c40f">&lt;/option&gt;</font>
-    <font color="#f1c40f">&lt;option&gt;</font>Bucharest<font color="#f1c40f">&lt;/option&gt;</font>
-    <font color="#f1c40f">&lt;option&gt;</font>Madrid<font color="#f1c40f">&lt;/option&gt;</font>
+    <font color="#f1c40f">&lt;option&gt;</font><font color="white">New York</font><font color="#f1c40f">&lt;/option&gt;</font>
+    <font color="#f1c40f">&lt;option&gt;</font><font color="white">Bucharest</font><font color="#f1c40f">&lt;/option&gt;</font>
+    <font color="#f1c40f">&lt;option&gt;</font><font color="white">Madrid</font><font color="#f1c40f">&lt;/option&gt;</font>
 
 <font color="#f1c40f">&lt;/select&gt;</font>
                 </pre>
@@ -87,13 +102,20 @@
     </table>
 
     <h4>Demo</h4>
-    <select name="my_html_select_box" size="3">
-        <option>New York</option>
-        <option>Bucharest</option>
-        <option>Madrid</option>
-    </select>
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <select name="my_html_select_box" size="3">
+                    <option>New York</option>
+                    <option>Bucharest</option>
+                    <option>Madrid</option>
+                </select>            
+            </td>
+        </tr>
+    </table>
 
     <h3>HTML - Selecciones múltiples</h3>
+    <hr>
     <p>En caso de que el usuario desee seleccionar más de uno de los enviados, será mucho más fácil con la ayuda del atributo <strong>multiple</strong>.</p>
 
     <table width="100%" cellspacing="0" cellpadding="10">
@@ -105,9 +127,9 @@
                 <pre>
 <font color="#f1c40f">&lt;select name="my_html_select_box" multiple="yes" size="3"&gt;</font>
 
-    <font color="#f1c40f">&lt;option&gt;</font>New York <font color="#f1c40f">&lt;/option&gt;</font>
-    <font color="#f1c40f">&lt;option&gt;</font>Bucharest<font color="#f1c40f">&lt;/option&gt;</font>
-    <font color="#f1c40f">&lt;option&gt;</font>Madrid<font color="#f1c40f">&lt;/option&gt;</font>
+    <font color="#f1c40f">&lt;option&gt;</font><font color="white">New York</font><font color="#f1c40f">&lt;/option&gt;</font>
+    <font color="#f1c40f">&lt;option&gt;</font><font color="white">Bucharest</font><font color="#f1c40f">&lt;/option&gt;</font>
+    <font color="#f1c40f">&lt;option&gt;</font><font color="white">Madrid</font><font color="#f1c40f">&lt;/option&gt;</font>
 
 <font color="#f1c40f">&lt;/select&gt;</font>
                 </pre>
@@ -116,13 +138,36 @@
     </table>
 
     <h4>Demo</h4>
-    <select name="my_html_select_box" multiple="yes" size="3">
-        <option>New York</option>
-        <option>Bucharest</option>
-        <option>Madrid</option>
-    </select>
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <select name="my_html_select_box" multiple="yes" size="3">
+                    <option>New York</option>
+                    <option>Bucharest</option>
+                    <option>Madrid</option>
+                </select>         
+            </td>
+        </tr>
+    </table>
 
     <p>Se deduce que este atributo <strong>multiple</strong> no funcione con una lista <em>drop down</em> y solo funciona cuando el atributo <strong>size</strong> está especificado.</p>
-
+    <hr>
+    <br>
+    <table width="100%">
+        <tr>
+            <td align="left">
+                <a href="formularioUpload.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    &#9664; <b>HTML - Formulario de upload</b>
+                </a>
+            </td>
+            <td align="right">
+                <a href="envioFormulario.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    <b>HTML - Envio del formulario</b> &#9654;
+                </a>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

@@ -8,6 +8,7 @@
 
 <body>
     <h1>HTML - Formulario de upload</h1>
+    <hr>
     <div>
         <a href="https://tutorialehtml.com/es/" title="HOME">Inicio</a> »
         <a href="https://tutorialehtml.com/es//">HTML</a> »
@@ -27,16 +28,23 @@
         <tr bgcolor="#2c3e50">
             <td>
                 <pre>
-&lt;input type="file" /&gt;
+<font color="yellow">&lt;input type="file" /&gt;</font>
             </pre>
             </td>
         </tr>
     </table>
 
     <h4>Demo</h4>
-    <input type="file">
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <input type="file">
+            </td>
+        </tr>
+    </table>
 
     <h3>Upload - Tamaño máximo de archivo</h3>
+    <hr>
     <p>Para limitar el tamaño de algunos de los archivos subidos en el servidor web usaremos el campo hidden. Esto no
         quiere decir que el archivo, no se volverá a chequear por parte del servidor.</p>
 
@@ -49,8 +57,10 @@
         <tr bgcolor="#2c3e50">
             <td>
                 <pre>
+                    <font color="yellow">
 &lt;input type="hidden" name="MAX_FILE_SIZE" value="4194304" /&gt;
 &lt;input type="file" /&gt;
+                </font>
             </pre>
             </td>
         </tr>
@@ -69,7 +79,24 @@
         <a href="https://tutorialehtml.com/es/tutoriales-html-desplegable-select/" title="HTML - Desplegables">HTML -
             Desplegables</a>
     </div>
-
+    <hr>
+    <br>
+    <table width="100%">
+        <tr>
+            <td align="left">
+                <a href="textArea.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    &#9664; <b>HTML - Text Are</b>
+                </a>
+            </td>
+            <td align="right">
+                <a href="desplegables.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    <b>HTML - Desplegables</b> &#9654;
+                </a>
+            </td>
+        </tr>
+    </table>
 </body>
 
 </html>

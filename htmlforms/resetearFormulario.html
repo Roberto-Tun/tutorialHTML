@@ -8,6 +8,7 @@
 <body>
 
     <h1>HTML - Resetear formulario</h1>
+    <hr>
 
     <p>Los botones reset son usados con frecuencia en formularios grandes, en caso de que el usuario haya escrito mal la mayoría de la información, y desea borrar todo el texto introducido.</p>
 
@@ -18,22 +19,29 @@
         <tr bgcolor="#2c3e50">
             <td>
                 <pre>
-<font color="#f1c40f">&lt;input</font> <font color="white">type="reset"</font> <font color="#f1c40f">value="Reset"</font> <font color="white">/&gt;</font><br>
-<font color="#f1c40f">&lt;input</font> <font color="white">type="reset"</font> <font color="#f1c40f">value="Borrar"</font> <font color="white">/&gt;</font><br>
-<font color="#f1c40f">&lt;input</font> <font color="white">type="reset"</font> <font color="#f1c40f">value="Limpiar formulario"</font> <font color="white">/&gt;</font>
+<font color="#f1c40f">&lt;input</font> <font color="#f1c40">type="reset"</font> <font color="#f1c40f">value="Reset"</font> <font color="#f1c40">/&gt;</font><br>
+<font color="#f1c40f">&lt;input</font> <font color="#f1c40">type="reset"</font> <font color="#f1c40f">value="Borrar"</font> <font color="#f1c40">/&gt;</font><br>
+<font color="#f1c40f">&lt;input</font> <font color="#f1c40">type="reset"</font> <font color="#f1c40f">value="Limpiar formulario"</font> <font color="#f1c40">/&gt;</font>
                 </pre>
             </td>
         </tr>
     </table>
 
     <h4>Demo</h4>
-    <form>
-        <input type="reset" value="Reset"><br>
-        <input type="reset" value="Borrar"><br>
-        <input type="reset" value="Limpiar formulario">
-    </form>
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <form>
+                    <input type="reset" value="Reset"><br>
+                    <input type="reset" value="Borrar"><br>
+                    <input type="reset" value="Limpiar formulario">
+                </form>
+            </td>
+        </tr>
+    </table>
 
     <h3>HTML - El botón reset</h3>
+    <hr>
     <p>Para que el botón reset sea funcional, será necesario que esté dentro de la etiqueta <code>&lt;form&gt;</code>. Puedes leer el tutorial sobre formularios HTML para más ejemplos.</p>
 
     <table width="100%" cellspacing="0" cellpadding="10">
@@ -43,10 +51,10 @@
         <tr bgcolor="#2c3e50">
             <td>
                 <pre>
-<font color="#f1c40f">&lt;form</font> <font color="white">action="myphp.php" method="post"&gt;</font><br>
-    <font color="#f1c40f">&lt;input</font> <font color="white">type="text" size="15" maxlength="15" /&gt;</font><br>
-    <font color="#f1c40f">&lt;input</font> <font color="white">type="text" size="25" maxlength="25" /&gt;</font><br>
-    <font color="#f1c40f">&lt;input</font> <font color="white">type="reset" value="Borrar todo" /&gt;</font><br>
+<font color="#f1c40f">&lt;form</font> <font color="f1c40f">action="myphp.php" method="post"&gt;</font><br>
+    <font color="#f1c40f">&lt;input</font> <font color="#f1c40f">type="text" size="15" maxlength="15" /&gt;</font><br>
+    <font color="#f1c40f">&lt;input</font> <font color="f1c40f">type="text" size="25" maxlength="25" /&gt;</font><br>
+    <font color="#f1c40f">&lt;input</font> <font color="f1c40f">type="reset" value="Borrar todo" /&gt;</font><br>
 <font color="#f1c40f">&lt;/form&gt;</font>
                 </pre>
             </td>
@@ -54,13 +62,37 @@
     </table>
 
     <h4>Demo</h4>
-    <form action="https://tutorialehtml.com/es/tutoriales-html-resetear-formulario/myphp.php" method="post">
-        <input type="text" size="15" maxlength="15"><br>
-        <input type="text" size="25" maxlength="25"><br>
-        <input type="reset" value="Borrar todo">
-    </form>
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <form action="https://tutorialehtml.com/es/tutoriales-html-resetear-formulario/myphp.php" method="post">
+                    <input type="text" size="15" maxlength="15"><br>
+                    <input type="text" size="25" maxlength="25"><br>
+                    <input type="reset" value="Borrar todo">
+                </form> 
+            </td>
+        </tr>
+    </table>
 
     <p>Intenta insertar un pequeño texto y luego dale click al botón "Borrar todo" en el ejemplo de arriba.</p>
+    <hr>
+    <br>
+    <table width="100%">
+        <tr>
+            <td align="left">
+                <a href="envioFormulario.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    &#9664; <b>HTML - Envio de formulario</b>
+                </a>
+            </td>
+            <td align="right">
+                <a href="camposEscondidos.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    <b>HTML - Campos escondido</b> &#9654;
+                </a>
+            </td>
+        </tr>
+    </table>
 
 </body>
 </html>

@@ -8,6 +8,7 @@
 
 <body>
     <h1>HTML - Botones de radio</h1>
+    <hr>
 
     <p>Los botones de radio se usan para permitirle al usuario elegir una de las opciones listadas. Para poder crear
         este tipo de campo, primero debemos darle un nombre que se usara para todo el grupo.</p>
@@ -35,9 +36,15 @@
     </table>
 
     <h4>Demo</h4>
-    <p>Elegir nacionalidad</p>
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <p>Elegir nacionalidad</p>
     <p>Española: <input type="radio" name="citizenship"><br> Rumana: <input type="radio" name="citizenship"><br>
         Inglesa: <input type="radio" name="citizenship"></p>
+            </td>
+        </tr>
+    </table>
 
     <p>Especificando un nombre para el grupo, al cual pertenece el campo, permitirá mostrar al navegador cómo
         diferenciar entre más de un grupo de botones radio dentro del mismo formulario, por lo tanto permitirá la
@@ -73,26 +80,63 @@
     </table>
 
     <h4>Demo</h4>
-    <p>Escoger nacionalidad</p>
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <p>Escoger nacionalidad</p>
     <p>Inglesa: <input type="radio" name="citizenship"><br> Española: <input type="radio" name="citizenship"><br>
         Rumana: <input type="radio" name="citizenship"></p>
-
-    <p>Escoger genéro</p>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <p>Escoger genéro</p>
     <p>Femenino: <input type="radio" name="sex"><br> Masculino: <input type="radio" name="sex"></p>
+            </td>
+        </tr>
+    </table>
+
 
     <h3>HTML - Botones de radio seleccionados <em>por defecto</em></h3>
+    <hr>
     <p>Al igual que las casillas de verificación, los <strong><em>botones radio</em></strong> pueden ser seleccionados
         para facilitar el trabajo del usuario.</p>
+        <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+            <tr>
+                <td>
+                    <p>Elegir nacionalidad</p>
 
-    <p>Elegir nacionalidad</p>
     <p>Inglesa: <input type="radio" name="citizenship"><br> Rumana: <input type="radio" name="citizenship"><br>
         Española: <input type="radio" name="citizenship" checked="yes"></p>
+                </td>
+            </tr>
+        </table>
 
     <p>Cualquiera de estas opciones puede ser seleccionada, no necesariamente la ultima. Además, es bueno preseleccionar
         determinadas respuestas con moderación y sólo cuando la información requerida no es de mayor importancia. Es
         posible que el usuario, sin prestar atención o por comodidad, elija la opción que ya ha sido seleccionada sin
         que esta sea la correcta para él en este caso.</p>
-
+        <hr>
+    <br>
+    <table width="100%">
+        <tr>
+            <td align="left">
+                <a href="input.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    &#9664; <b>HTML - Etiqueta input</b>
+                </a>
+            </td>
+            <td align="right">
+                <a href="campoContraseña.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    <b>HTML - Campo contraseña</b> &#9654;
+                </a>
+            </td>
+        </tr>
+    </table>
 </body>
 
 </html>

@@ -8,6 +8,7 @@
 <body>
 
     <h1>HTML - Envío del formulario</h1>
+    <hr>
     <div class="Trail">
         <a href="https://tutorialehtml.com/es/" title="HOME">HOME</a> » HTML » Tutorial HTML - Envío del formulario
     </div>
@@ -23,26 +24,33 @@
         <tr bgcolor="#2c3e50">
             <td>
                 <pre>
-<font color="#f1c40f">&lt;input</font> <font color="white">type</font>=<font color="#f1c40f">"submit"</font> <font color="white">value</font>=<font color="#f1c40f">"Submit"</font> <font color="white">/&gt;</font>
+<font color="#f1c40f">&lt;input type=</font><font color="#f1c40f">"submit" value</font><font color="#f1c40f">"Submit"/&gt;</font>
 <font color="#f1c40f">&lt;br&gt;</font>
-<font color="#f1c40f">&lt;input</font> <font color="white">type</font>=<font color="#f1c40f">"submit"</font> <font color="white">value</font>=<font color="#f1c40f">"Enviar"</font> <font color="white">/&gt;</font>
+<font color="#f1c40f">&lt;input type=</font><font color="#f1c40f">"submit" value=</font><font color="#f1c40f">"Enviar"/&gt;</font>
 <font color="#f1c40f">&lt;br&gt;</font>
-<font color="#f1c40f">&lt;input</font> <font color="white">type</font>=<font color="#f1c40f">"submit"</font> <font color="white">value</font>=<font color="#f1c40f">"Continuar"</font> <font color="white">/&gt;</font>
+<font color="#f1c40f">&lt;input type=</font><font color="#f1c40f">"submit" value=</font><font color="#f1c40f">"Continuar"/&gt;</font>
                 </pre>
             </td>
         </tr>
     </table>
 
     <h4>Demo</h4>
-    <div class="well code_preview">
-        <input type="submit" value="Submit"><br>
-        <input type="submit" value="Enviar"><br>
-        <input type="submit" value="Continuar">
-    </div>
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <div class="well code_preview">
+                    <input type="submit" value="Submit"><br>
+                    <input type="submit" value="Enviar"><br>
+                    <input type="submit" value="Continuar">
+                </div>       
+            </td>
+        </tr>
+    </table>
 
     <p>Como puedes ver hicimos una variación de botones de envío, cambiando el valor del atributo. Esto puede ser modificado dependiendo de las necesidades.</p>
 
     <h2>Submit - El envio</h2>
+    <hr>
     <p>Para que un botón submit funcione correctamente es necesario poner la etiqueta <strong>&lt;form&gt;</strong> además de otros pocos atributos. Esos son <strong>method</strong> y <strong>action</strong>. Además necesitaremos un archivo PHP, PERL o ASP, para complementar esta acción.</p>
     <p>Otra opción sería poner el valor del atributo action como mailto, seguido de una dirección e-mail, y el formulario será enviado a la dirección e-mail.</p>
 
@@ -55,10 +63,10 @@
         <tr bgcolor="#2c3e50">
             <td>
                 <pre>
-<font color="#f1c40f">&lt;form</font> <font color="white">method</font>=<font color="#f1c40f">"post"</font> <font color="white">action</font>=<font color="#f1c40f">"mailto:email@exemple.com"</font> <font color="white">&gt;</font>
-<font color="white">Nombre:</font> <font color="#f1c40f">&lt;input</font> <font color="white">type</font>=<font color="#f1c40f">"text"</font> <font color="white">name</font>=<font color="#f1c40f">"Name"</font> <font color="white">size</font>=<font color="#f1c40f">"15"</font> <font color="white">maxlength</font>=<font color="#f1c40f">"15"</font> <font color="white">/&gt;</font>
-<font color="white">Apellido:</font> <font color="#f1c40f">&lt;input</font> <font color="white">type</font>=<font color="#f1c40f">"text"</font> <font color="white">name</font>=<font color="#f1c40f">"Last_name"</font> <font color="white">size</font>=<font color="#f1c40f">"25"</font> <font color="white">maxlength</font>=<font color="#f1c40f">"25"</font> <font color="white">/&gt;</font>
-<font color="#f1c40f">&lt;input</font> <font color="white">type</font>=<font color="#f1c40f">"submit"</font> <font color="white">value</font>=<font color="#f1c40f">"Enviar por correo"</font> <font color="white">/&gt;</font>
+<font color="#f1c40f">&lt;form method=</font><font color="#f1c40f">"post" action=</font><font color="#f1c40f">"mailto:email@exemple.com"</font> <font color="white">&gt;</font>
+<font color="white">Nombre:</font> <font color="#f1c40f">&lt;input input=</font><font color="#f1c40f">"text" name=</font><font color="#f1c40f">"Name" size=</font><font color="#f1c40f">"15" maxlength=</font><font color="#f1c40f">"15"</font> <font color="white">/&gt;</font>
+<font color="white">Apellido:</font> <font color="#f1c40f">&lt;input input=</font><font color="#f1c40f">"text" name=</font><font color="#f1c40f">"Last_name" size=</font><font color="#f1c40f">"25" maxlength=</font><font color="#f1c40f">"15"</font> <font color="white">/&gt;</font>
+<font color="#f1c40f">&lt;input type=</font><font color="#f1c40f">"submit" value=</font><font color="#f1c40f">"Enviar por correo"</font> <font color="white">/&gt;</font>
 <font color="#f1c40f">&lt;/form&gt;</font>
                 </pre>
             </td>
@@ -66,13 +74,19 @@
     </table>
 
     <h4>Demo</h4>
-    <div class="well code_preview">
-        <form method="post" action="mailto:email@exemple.com">
-            Nombre: <input type="text" name="Name" size="15" maxlength="15">
-            Apellido: <input type="text" name="Last_name" size="25" maxlength="25">
-            <input type="submit" value="Enviar por correo">
-        </form>
-    </div>
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <div class="well code_preview">
+                    <form method="post" action="mailto:email@exemple.com">
+                        Nombre: <input type="text" name="Name" size="15" maxlength="15">
+                        Apellido: <input type="text" name="Last_name" size="25" maxlength="25">
+                        <input type="submit" value="Enviar por correo">
+                    </form>
+                </div>      
+            </td>
+        </tr>
+    </table>
 
     <p>Sólo cambia el email email@example.com por el que quieras usar.</p>
 
@@ -87,12 +101,30 @@
         <tr bgcolor="#2c3e50">
             <td>
                 <pre>
-<font color="#f1c40f">&lt;form</font> <font color="white">method</font>=<font color="#f1c40f">"post"</font> <font color="white">action</font>=<font color="#f1c40f">"mailto:email@exemple.com"</font> <font color="white">&gt;</font>
-<font color="white">Nombre:</font> <font color="#f1c40f">&lt;input</font> <font color="white">type</font>=<font color="#f1c40f">"text"</font> <font color="white">name</font>=<font color="#f1c40f">"Name"</font> <font color="white">size</font>=<font color="#f1c40f">"15"</font> <font color="white">maxlength</font>=<font color="#f1c40f">"15"</font> <font color="white">/&gt;</font>
-<font color="white">Apellido:</font> <font color="#f1c40f">&lt;input</font> <font color="white">type</font>=<font color="#f1c40f">"text"</font> <font color="white">name</font>=<font color="#f1c40f">"Last_name"</font> <font color="white">size</font>=<font color="#f1c40f">"25"</font> <font color="white">maxlength</font>=<font color="#f1c40f">"25"</font> <font color="white">/&gt;</font>
-<font color="#f1c40f">&lt;input</font> <font color="white">type</font>=<font color="#f1c40f">"submit"</font> <font color="white">value</font>=<font color="#f1c40f">"Enviar por correo"</font> <font color="white">/&gt;</font>
+<font color="#f1c40f">&lt;form method=</font><font color="#f1c40f">"post" action=</font><font color="#f1c40f">"mailto:email@exemple.com"</font> <font color="white">&gt;</font>
+<font color="white">Nombre:</font> <font color="#f1c40f">&lt;input input=</font><font color="#f1c40f">"text" name=</font><font color="#f1c40f">"Name" size=</font><font color="#f1c40f">"15" maxlength=</font><font color="#f1c40f">"15"</font> <font color="white">/&gt;</font>
+<font color="white">Apellido:</font> <font color="#f1c40f">&lt;input input=</font><font color="#f1c40f">"text" name=</font><font color="#f1c40f">"Last_name" size=</font><font color="#f1c40f">"25" maxlength=</font><font color="#f1c40f">"15"</font> <font color="white">/&gt;</font>
+<font color="#f1c40f">&lt;input type=</font><font color="#f1c40f">"submit" value=</font><font color="#f1c40f">"Enviar por correo"</font> <font color="white">/&gt;</font>
 <font color="#f1c40f">&lt;/form&gt;</font>
                 </pre>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <br>
+    <table width="100%">
+        <tr>
+            <td align="left">
+                <a href="desplegables.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    &#9664; <b>HTML - Desplegables</b>
+                </a>
+            </td>
+            <td align="right">
+                <a href="resetearFormulario.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    <b>HTML - Resetear formulario</b> &#9654;
+                </a>
             </td>
         </tr>
     </table>

@@ -27,6 +27,7 @@
     </ul>
 
     <h3>HTML - Campos de texto y contraseñas</h3>
+    <hr>
     <p>Estoy seguro que has escuchado bastante sobre ellos, a lo largo del tiempo, en Internet. En realidad los campos
         de texto son la base de cualquier formulario.</p>
 
@@ -48,11 +49,18 @@
     </table>
 
     <h4>Demo</h4>
-    <input type="text"><br>
-    <input type="password">
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <input type="text"><br>
+                <input type="password">
+            </td>
+        </tr>
+    </table>
     <p>Escribe algo en los campos de arriba para notar la diferencia.</p>
 
     <h3>HTML - Checkboxes (Casillas de verificación)</h3>
+    <hr>
     <p>Ideal para ofrecerle al usuario la opción de seleccionar más de una respuesta.</p>
 
     <table width="100%" cellspacing="0" cellpadding="10">
@@ -64,22 +72,29 @@
         <tr bgcolor="#2c3e50">
             <td>
                 <pre>
-<font color="#f1c40f">&lt;input type="checkbox" /&gt;</font> Leche
+<font color="#f1c40f">&lt;input type="checkbox" /&gt;</font> <font color="white">Leche</font>
 <font color="#f1c40f">&lt;br /&gt;</font>
-<font color="#f1c40f">&lt;input type="checkbox" /&gt;</font> Agua
+<font color="#f1c40f">&lt;input type="checkbox" /&gt;</font> <font color="white">Agua</font>
 <font color="#f1c40f">&lt;br /&gt;</font>
-<font color="#f1c40f">&lt;input type="checkbox" /&gt;</font> Pan
+<font color="#f1c40f">&lt;input type="checkbox" /&gt;</font> <font color="white">Pan</font>
             </pre>
             </td>
         </tr>
     </table>
 
     <h4>Demo</h4>
-    <input type="checkbox"> Leche<br>
-    <input type="checkbox"> Agua<br>
-    <input type="checkbox"> Pan
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <input type="checkbox"> Leche<br>
+                <input type="checkbox"> Agua<br>
+                <input type="checkbox"> Pan
+            </td>
+        </tr>
+    </table>
 
     <h2>HTML - Radio</h2>
+    <hr>
     <p>No me refiero a un radio de música, sino a un pequeño círculo el cual ofrece la posibilidad de escoger una única
         respuesta para una pregunta.</p>
 
@@ -92,19 +107,26 @@
         <tr bgcolor="#2c3e50">
             <td>
                 <pre>
-<font color="#f1c40f">&lt;input type="radio" name="sexo" /&gt;</font> Mujer
+<font color="#f1c40f">&lt;input type="radio" name="sexo" /&gt;</font> <font color="white">Mujer</font>
 <font color="#f1c40f">&lt;br /&gt;</font>
-<font color="#f1c40f">&lt;input type="radio" name="sexo" /&gt;</font> Hombre
+<font color="#f1c40f">&lt;input type="radio" name="sexo" /&gt;</font> <font color="white">Hombre</font>
             </pre>
             </td>
         </tr>
     </table>
 
     <h4>Demo</h4>
-    <input type="radio" name="sexo"> Mujer<br>
-    <input type="radio" name="sexo"> Hombre
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <input type="radio" name="sexo"> Mujer<br>
+                <input type="radio" name="sexo"> Hombre
+            </td>
+        </tr>
+    </table>
 
     <h3>HTML - Botones submit</h3>
+    <hr>
     <p>Aquí, tendremos que darle un valor al atributo submit, este es el texto que será mostrado en el botón generado.
         Si no se especifica ningún texto para el atributo <em>value</em> cada navegador pondrá uno por defecto.</p>
 
@@ -118,17 +140,24 @@
             <td>
                 <pre>
 <font color="#f1c40f">&lt;input type="submit" value="Enviar" /&gt;</font>
-<font color="#f1c40f">&lt;input type="submit" value="Siguiente paso &gt;&gt;" /&gt;</font>
+<font color="#f1c40f">&lt;input type="submit" value="Siguiente paso" /&gt;</font>
             </pre>
             </td>
         </tr>
     </table>
 
     <h4>Demo</h4>
-    <input type="submit" value="Enviar">
-    <input type="submit" value="Siguiente paso &gt;&gt;">
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <input type="submit" value="Enviar">
+                <input type="submit" value="Siguiente paso &gt;&gt;">
+            </td>
+        </tr>
+    </table>
 
     <h3>HTML - Botones reset</h3>
+    <hr>
     <p>Aquí, como con el botón submit, tendremos que darle un valor, que será mostrado en el botón generado. Este botón
         es extremadamente útil en caso de que el usuario complete la mayoría de los campos del formulario con
         información incorrecta. Le dará la posibilidad de borrar todo y empezar de nuevo.</p>
@@ -150,8 +179,14 @@
     </table>
 
     <h4>Demo</h4>
-    <input type="reset" value="Resetear formulario">
-    <input type="reset" value="Limpiar campos">
+    <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+        <tr>
+            <td>
+                <input type="reset" value="Resetear formulario">
+                <input type="reset" value="Limpiar campos">
+            </td>
+        </tr>
+    </table>
 
     <h3>HTML Campos de texto y botones - Nota</h3>
     <p>Debe decirse que estos botones no harán el procesamiento de los datos introducidos. Necesitarás un archivo PHP o
@@ -159,6 +194,7 @@
         tutorial profundizaremos más sobre los atributos que se pueden usar con la etiqueta <em>input</em> y también
         mostraremos algunas cosas que aún no hemos mencionado.</p>
     <hr>
+    <br>
     <table width="100%">
         <tr>
             <td align="left">

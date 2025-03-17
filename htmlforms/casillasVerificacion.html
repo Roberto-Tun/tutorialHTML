@@ -18,12 +18,14 @@
 
     <body>
         <h1>HTML - Casillas de verificación</h1>
+        <hr>
 
         <p>Las casillas de verificación, como dijimos en un tutorial anterior, son parte de las aplicaciones que ofrece
             la etiqueta input.</p>
         <p>La diferencia con el tutorial anterior es que esta vez miraremos un poco más el tema.</p>
 
         <h3>Checkbox - Crear listas</h3>
+        <hr>
         <p>Las casillas de verificación ofrecen la posibilidad al usuario de elegir simultáneamente más de una opción o
             respuestas.</p>
 
@@ -36,12 +38,12 @@
             <tr bgcolor="#2c3e50">
                 <td>
                     <pre>
-<font color="#f1c40f">&lt;p&gt;</font>Elije tus colores favoritos.<font color="#f1c40f">&lt;/p&gt;</font>
+<font color="#f1c40f">&lt;p&gt;</font><font color="white">Elije tus colores favoritos.</font><font color="#f1c40f">&lt;/p&gt;</font>
 <font color="#f1c40f">&lt;p&gt;</font>
-	Azul: <font color="#f1c40f">&lt;input type="checkbox" name="colors" value="blue" /&gt;</font><font color="#f1c40f">&lt;br /&gt;</font>
-	Amarillo: <font color="#f1c40f">&lt;input type="checkbox" name="colors" value="yellow" /&gt;</font><font color="#f1c40f">&lt;br /&gt;</font>
-	Rojo: <font color="#f1c40f">&lt;input type="checkbox" name="colors" value="red" /&gt;</font><font color="#f1c40f">&lt;br /&gt;</font>
-	Verde: <font color="#f1c40f">&lt;input type="checkbox" name="colors" value="green" /&gt;</font>
+<font color="white">Azul: </font><font color="#f1c40f">&lt;input type="checkbox" name="colors" value="blue" /&gt;</font><font color="#f1c40f">&lt;br /&gt;</font>
+<font color="white">Amarillo: </font><font color="#f1c40f">&lt;input type="checkbox" name="colors" value="yellow" /&gt;</font><font color="#f1c40f">&lt;br /&gt;</font>
+<font color="white">Rojo: </font><font color="#f1c40f">&lt;input type="checkbox" name="colors" value="red" /&gt;</font><font color="#f1c40f">&lt;br /&gt;</font>
+<font color="white">Verde: </font><font color="#f1c40f">&lt;input type="checkbox" name="colors" value="green" /&gt;</font>
 <font color="#f1c40f">&lt;/p&gt;</font>
                 </pre>
                 </td>
@@ -49,12 +51,19 @@
         </table>
 
         <h4>Demo</h4>
-        <p>Elije tus colores favoritos.</p>
-        <p>Azul: <input type="checkbox" name="colors" value="blue"><br> Amarillo: <input type="checkbox" name="colors"
+        <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+            <tr>
+                <td>
+                    <p>Elije tus colores favoritos.</p>
+                    <p>Azul: <input type="checkbox" name="colors" value="blue"><br> Amarillo: <input type="checkbox" name="colors"
                 value="yellow"><br> Rojo: <input type="checkbox" name="colors" value="red"><br> Verde: <input
                 type="checkbox" name="colors" value="green"></p>
+                </td>
+            </tr>
+        </table>
 
         <h3>Checkbox - Casillas seleccionadas por defecto</h3>
+        <hr>    
         <p>Las casillas de verificación también ofrecen la posibilidad de ser seleccionadas por defecto para facilitar
             el trabajo del usuario en algunas situaciones.</p>
         <p>Esto se hace con la ayuda del atributo <em>checked</em>, con el valor <em>yes</em>.</p>
@@ -68,12 +77,12 @@
             <tr bgcolor="#2c3e50">
                 <td>
                     <pre>
-<font color="#f1c40f">&lt;p&gt;</font>Elije tus colores favoritos.<font color="#f1c40f">&lt;/p&gt;</font>
+<font color="#f1c40f">&lt;p&gt;</font> <font color="white">Elije tus colores favoritos.</font><font color="#f1c40f">&lt;/p&gt;</font>
 <font color="#f1c40f">&lt;p&gt;</font>
-	Azul: <font color="#f1c40f">&lt;input type="checkbox" name="colors" value="blue" checked="yes" /&gt;</font><font color="#f1c40f">&lt;br /&gt;</font>
-	Amarillo: <font color="#f1c40f">&lt;input type="checkbox" name="colors" value="yellow" /&gt;</font><font color="#f1c40f">&lt;br /&gt;</font>
-	Rojo: <font color="#f1c40f">&lt;input type="checkbox" name="colors" value="red" checked="yes" /&gt;</font><font color="#f1c40f">&lt;br /&gt;</font>
-	Verde: <font color="#f1c40f">&lt;input type="checkbox" name="colors" value="green" /&gt;</font>
+<font color="white">Azul: </font><font color="#f1c40f">&lt;input type="checkbox" name="colors" value="blue" checked="yes" /&gt;</font><font color="#f1c40f">&lt;br /&gt;</font>
+<font color="white">Amarillo: </font><font color="#f1c40f">&lt;input type="checkbox" name="colors" value="yellow" /&gt;</font><font color="#f1c40f">&lt;br /&gt;</font>
+<font color="white">Rojo: </font><font color="#f1c40f">&lt;input type="checkbox" name="colors" value="red" checked="yes" /&gt;</font><font color="#f1c40f">&lt;br /&gt;</font>
+<font color="white">Verde: </font><font color="#f1c40f">&lt;input type="checkbox" name="colors" value="green" /&gt;</font>
 <font color="#f1c40f">&lt;/p&gt;</font>
                 </pre>
                 </td>
@@ -81,16 +90,40 @@
         </table>
 
         <h4>Demo</h4>
-        <p>Elije tus colores favoritos.</p>
+        <table width="100%" cellspacing="0" cellpadding="10" bgcolor="#E6F7FF" border="1">
+            <tr>
+                <td>
+                    <p>Elije tus colores favoritos.</p>
         <p>Azul: <input type="checkbox" name="colors" value="blue" checked="yes"><br> Amarillo: <input type="checkbox"
                 name="colors" value="yellow"><br> Rojo: <input type="checkbox" name="colors" value="red"
                 checked="yes"><br> Verde: <input type="checkbox" name="colors" value="green"></p>
+                </td>
+            </tr>
+        </table>
 
         <p>Intenta practicar un poco con esta función. Es bastante simple pero muy útil en algunos casos.</p>
 
         <hr>
         <p><a href="https://tutorialehtml.com/es/tutoriales-html-password-contrasena/">HTML - Campo contraseña</a> | <a
                 href="https://tutorialehtml.com/es/tutoriales-html-boton-radio/">HTML - Botones de radio</a></p>
+                <hr>
+                <br>
+                <table width="100%">
+                    <tr>
+                        <td align="left">
+                            <a href="campoContraseña.html" bgcolor="#337ab7"
+                                style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                                &#9664; <b>HTML - Campo contraseña</b>
+                            </a>
+                        </td>
+                        <td align="right">
+                            <a href="botonesRadio.html" bgcolor="#337ab7"
+                                style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                                <b>HTML - Botones de radio</b> &#9654;
+                            </a>
+                        </td>
+                    </tr>
+                </table>
     </body>
 
     </html>
