@@ -8,16 +8,21 @@
 
 <body>
     <h1 class="post-title">HTML - Etiqueta body</h1>
-    <div class="Trail"><a href="/es/" title="HOME">Inicio</a> »&nbsp;&nbsp;
-        <a href="/es//">HTML</a> »&nbsp;&nbsp;
+    <hr size="4" color="#dddddd">
+    <div class="Trail">
+        <a href="../home.html" title="HOME">
+            <img width="18" src="../assets/images/home-link.png" alt="home">
+        </a>
+        &nbsp;&rsaquo;&rsaquo;&nbsp;&nbsp;<a href="../home.html">HTML</a>
+        &rsaquo;&rsaquo;&nbsp;&nbsp;
         Tutorial HTML - Etiqueta body
     </div>
-    <div class="spacer20"></div>
     <p>Como mencionamos antes en otro tutorial, la etiqueta <em>&lt;body&gt;</em> es la que contiene
         cada elemento visible en la página web: tablas, marcos, formularios, párrafos, fotos y demás.
     </p>
     <p>Todos estos se ubican entre la etiqueta <em>&lt;body&gt;</em> y <em>&lt;/body&gt;</em>.</p>
     <h3>HTML - Atributos de la etiqueta body</h3>
+    <hr>
     <ul>
         <li><strong>leftmargin</strong> - establece un borde en el lado izquierdo de la página (un
             espacio vacío)</li>
@@ -28,30 +33,42 @@
     <table width="100%" cellspacing="0" cellpadding="10">
         <tr bgcolor="#e67e22">
             <td><b>
-                    <font color="white">HTML</font>
-                </b></td>
+                <font color="white">HTML</font>
+            </b></td>
         </tr>
         <tr bgcolor="#2c3e50">
             <td>
-                <font color="#f1c40f">&lt;body topmargin="50"&gt;<br><br>&lt;p&gt;Este texto está ubicado a una
-                    distancia de 50 pixeles de la parte superior de la página.&lt;/p&gt;<br>&lt;/body&gt;</font>
+                <pre>
+<font color="#f1c40f">&lt;body topmargin="50"&gt;</font>
+<font color="#f1c40f">&lt;p&gt;</font>
+<font color="white">Este texto está ubicado a una distancia de 50 píxeles de la parte superior de la página.</font>
+<font color="#f1c40f">&lt;/p&gt;</font>
+<font color="#f1c40f">&lt;/body&gt;</font>
+                </pre>
             </td>
         </tr>
     </table>
+    
     <br> <!-- Agregué una separación vertical -->
     <table width="100%" cellspacing="0" cellpadding="10">
         <tr bgcolor="#e67e22">
             <td><b>
-                    <font color="white">HTML</font>
-                </b></td>
+                <font color="white">HTML</font>
+            </b></td>
         </tr>
         <tr bgcolor="#2c3e50">
             <td>
-                <font color="#f1c40f">&lt;body leftmargin="50"&gt;<br><br>&lt;p&gt;Este texto está ubicado a una
-                    distancia de 50 pixeles del lado izquierdo de la página&lt;/p&gt;<br>&lt;/body&gt;</font>
+                <pre>
+<font color="#f1c40f">&lt;body leftmargin="50"&gt;</font>
+<font color="#f1c40f">&lt;p&gt;</font>
+<font color="white">Este texto está ubicado a una distancia de 50 píxeles del lado izquierdo de la página.</font>
+<font color="#f1c40f">&lt;/p&gt;</font>
+<font color="#f1c40f">&lt;/body&gt;</font>
+                </pre>
             </td>
         </tr>
     </table>
+    
     <br> <!-- Agregué una separación vertical -->
     <p>Puedes copiar este código en un archivo de texto y guardarlo como .html para verlo mejor.</p>
     <table width="100%" cellspacing="0" cellpadding="10">
@@ -62,7 +79,8 @@
         </tr>
         <tr bgcolor="#2c3e50">
             <td>
-                <font color="#f1c40f">&lt;body text="red"&gt;<br><br>o<br><br>&lt;body text="rgb(255,0,0)"&gt;</font>
+                <pre><font color="#f1c40f">&lt;body text="red"&gt;<br><br><font color="white">o</font><br><br>&lt;body text="rgb(255,0,0)"&gt;</font>
+                </pre>
             </td>
         </tr>
     </table>
@@ -70,6 +88,7 @@
     <p>Esta parte del código establecerá el color base de la fuente, como color rojo, en caso de que
         otro color no sea especificado dentro de la etiqueta de párrafo, <em>&lt;p&gt;</em>.</p>
     <h3>HTML - Color del link establecido por la etiqueta <em>body</em></h3>
+    <hr>
     <p>Igual que con el texto, puedes poner el color de los links vistos o no vistos con la
         ayuda de la etiqueta body.</p>
     <table width="100%" cellspacing="0" cellpadding="10">
@@ -80,28 +99,32 @@
         </tr>
         <tr bgcolor="#2c3e50">
             <td>
-                <font color="#f1c40f">&lt;body link="white" vlink="black"&gt;<br><br>o<br><br>&lt;body
-                    link="rgb(255,255,255)" vlink="rgb(0,0,0)"&gt;</font>
+                <pre>
+<font color="#f1c40f">&lt;body link="white" vlink="black"&gt;<br><br><font color="white">o</font><br><br>&lt;body link="rgb(255,255,255)" vlink="rgb(0,0,0)"&gt;</font>
+                </pre>
             </td>
         </tr>
     </table>
     <br> <!-- Agregué una separación vertical -->
     <p>En realidad esto se usa muy poco, dado que en su lugar se suele usar el CSS (Cascading
         Style Sheets), es mucho más fácil y además práctico para futuros modificaciones.</p>
-
-        <table width="100%">
-            <tr>
-                <td align="left">
-                    <a href="../htmlBase/meta.html" bgcolor="#337ab7" style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
-                        &#9664; <b>HTML - Etiqueta meta</b>
-                    </a>
-                </td>
-                <td align="right">
-                    <a href="div.html" bgcolor="#337ab7" style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
-                        <b>HTML - Etiqueta div</b> &#9654;
-                    </a>
-                </td>
-            </tr>
-        </table>
+    <hr>
+    <table width="100%">
+        <tr>
+            <td align="left">
+                <a href="../htmlBase/meta.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    &#9664; <b>HTML - Etiqueta meta</b>
+                </a>
+            </td>
+            <td align="right">
+                <a href="div.html" bgcolor="#337ab7"
+                    style="background-color:#337ab7; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
+                    <b>HTML - Etiqueta div</b> &#9654;
+                </a>
+            </td>
+        </tr>
+    </table>
 </body>
+
 </html>
